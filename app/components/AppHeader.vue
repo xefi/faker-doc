@@ -9,16 +9,8 @@ const { header } = useAppConfig()
 <template>
   <UHeader>
     <template #logo>
-      <template v-if="header?.logo?.dark || header?.logo?.light">
-        <UColorModeImage v-bind="{ class: 'h-6 w-auto', ...header?.logo }" />
-      </template>
-      <template v-else>
-        Nuxt UI Pro <UBadge
-          label="Docs"
-          variant="subtle"
-          class="mb-0.5"
-        />
-      </template>
+      <UColorModeImage v-bind="{ class: 'h-6 w-auto', ...header?.logo }" />
+      Faker PHP
     </template>
 
     <template

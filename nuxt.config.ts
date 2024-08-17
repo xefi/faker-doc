@@ -25,6 +25,12 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'simple-icons']
   },
 
+  content: {
+    highlight: {
+      langs: ['php', 'bash']
+    }
+  },
+
   colorMode: {
     disableTransition: true
   },

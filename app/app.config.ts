@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: 'green',
+    primary: 'red',
     gray: 'slate',
     footer: {
       bottom: {
@@ -15,8 +15,8 @@ export default defineAppConfig({
   header: {
     logo: {
       alt: '',
-      light: '',
-      dark: ''
+      light: '/xefi-light.svg',
+      dark: '/xefi-dark.svg'
     },
     search: true,
     colorMode: true,
