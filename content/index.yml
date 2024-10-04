@@ -1,68 +1,61 @@
-title: 'Nuxt UI Pro - Docs template'
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: 'FakerPHP - Documentation'
+description: FakerPHP is an open-source PHP library that enhances the generation of fake data, inspired by fzaninotto/faker.
 navigation: false
 hero:
-  title: 'Build your docs in seconds'
-  description: 'Create your documentation in seconds with this template!'
+  title: 'Generate fake data in no time'
+  description: 'Easily generate fake data for your PHP projects with FakerPHP!'
   orientation: horizontal
-  headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
-    icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Get started
+    - label: Get Started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       to: '/getting-started'
       size: lg
-    - label: Use this template
-      icon: i-simple-icons-github
-      size: lg
-      color: gray
-      to: https://github.com/nuxt-ui-pro/docs
-      target: _blank
   code: |
     ```bash [Terminal]
-    npx nuxi init -t github:nuxt-ui-pro/docs
+    composer require xefi/faker-php
     ```
 features:
-  title: 'All-in-one docs template'
+  title: 'FakerPHP Features'
   links:
-    - label: 'Explore Nuxt UI Pro'
-      icon: 'i-simple-icons-nuxtdotjs'
+    - label: 'Explore FakerPHP'
+      icon: 'i-simple-icons-github'
       trailingIcon: 'i-heroicons-arrow-right-20-solid'
       color: 'gray'
-      to: 'https://ui.nuxt.com/pro'
+      to: 'https://github.com/xefi/faker-php'
       target: '_blank'
       size: lg
   items:
-    - title: 'Nuxt 3'
-      description: 'Powered by Nuxt 3 for optimal performances and SEO.'
-      icon: 'i-simple-icons-nuxtdotjs'
-      to: 'https://nuxt.com'
+    - title: 'Light Download Size'
+      description: 'Light download size, optimizing installation and performance.'
+      icon: 'i-heroicons-cloud-arrow-down-20-solid'
+      to: 'https://github.com/xefi/faker-php'
       target: '_blank'
-    - title: 'Markdown'
-      description: 'Write your pages with MDC thanks to Nuxt Content.'
-      icon: 'i-simple-icons-markdown'
-      to: 'https://content.nuxt.com'
+    - title: 'Enhanced Extension Handling'
+      description: 'Lot of easy extensions, making it easier to extend and customize for all the projects.'
+      icon: 'i-heroicons-puzzle-piece-20-solid'
+      to: 'https://github.com/xefi/faker-php'
       target: '_blank'
-    - title: 'Nuxt UI'
-      description: 'Offers a very large set of full customizable components.'
+    - title: 'Multiple Generators Support'
+      description: 'Ability to use multiple generators simultaneously, including unique and regex-based generators, for greater flexibility.'
       icon: 'i-heroicons-sparkles-20-solid'
-      to: 'https://ui.nuxt.com'
+      to: 'https://github.com/xefi/faker-php'
       target: '_blank'
-    - title: 'TypeScript'
-      description: 'A fully typed development experience.'
-      icon: 'i-simple-icons-typescript'
-      to: 'https://www.typescriptlang.org'
+    - title: 'Architectural Improvements'
+      description: 'Modern architecture, providing a more robust and maintainable codebase.'
+      icon: 'i-heroicons-building-office-20-solid'
+      to: 'https://github.com/xefi/faker-php'
       target: '_blank'
-    - title: 'Nuxt Studio'
-      description: 'Supported by Nuxt Studio for fast updates and previews.'
-      icon: 'i-simple-icons-nuxtdotjs'
-      to: 'https://nuxt.studio'
-      target: '_blank'
-    - title: 'Search'
-      description: 'A full-text search modal empowered by Fuse.js.'
-      icon: 'i-heroicons-magnifying-glass-20-solid'
-      to: 'https://ui.nuxt.com/pro/components/docs/docs-search'
-      target: '_blank'
+#    - title: 'Native Integration with frameworks'
+#      description: 'Seamless integration with Laravel and Symfony frameworks, providing smooth compatibility and enhanced developer experience.'
+#      icon: 'i-heroicons-bolt-20-solid'
+#      to: 'https://github.com/xefi/faker-php'
+#      target: '_blank'
+      links:
+        - label: 'Explore FakerPHP'
+          icon: 'i-simple-icons-github'
+          trailingIcon: 'i-heroicons-arrow-right-20-solid'
+          color: 'gray'
+          to: 'https://github.com/xefi/faker-php'
+          target: '_blank'
+          size: lg

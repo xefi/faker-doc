@@ -22,55 +22,35 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt-ui-pro/docs',
+      'to': 'https://github.com/xefi/faker-php',
       'target': '_blank',
-      'aria-label': 'Docs template on GitHub'
+      'aria-label': 'Find the project on GitHub'
     }]
   },
   footer: {
-    credits: 'Copyright © 2023',
+    credits: 'Copyright © 2024',
     colorMode: false,
     links: [{
-      'icon': 'i-simple-icons-nuxtdotjs',
-      'to': 'https://nuxt.com',
+      'icon': 'i-heroicons-ellipsis-horizontal-circle',
+      'to': 'https://xefi.com',
       'target': '_blank',
-      'aria-label': 'Nuxt Website'
-    }, {
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://discord.com/invite/ps2h6QT',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on Discord'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://x.com/nuxt_js',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
+      'aria-label': 'XEFI'
     }, {
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
+      'to': 'https://github.com/xefi/faker-php',
       'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      'aria-label': 'Find the project on GitHub'
     }]
   },
   toc: {
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/nuxt-ui-pro/docs/edit/main/content',
+      edit: 'https://github.com/xefi/faker-php',
       links: [{
         icon: 'i-heroicons-star',
         label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
-        target: '_blank'
-      }, {
-        icon: 'i-heroicons-book-open',
-        label: 'Nuxt UI Pro docs',
-        to: 'https://ui.nuxt.com/pro/guide',
-        target: '_blank'
-      }, {
-        icon: 'i-simple-icons-nuxtdotjs',
-        label: 'Purchase a license',
-        to: 'https://ui.nuxt.com/pro/purchase',
+        to: 'https://github.com/xefi/faker-php',
         target: '_blank'
       }]
     }
