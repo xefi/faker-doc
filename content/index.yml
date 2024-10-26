@@ -1,68 +1,65 @@
-title: 'Nuxt UI Pro - Docs template'
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: 'Faker PHP - Generate fake data on demand'
+description: Make your development easier by making using fake data. Easy to use and adapt to your needed locale.
 navigation: false
 hero:
-  title: 'Build your docs in seconds'
-  description: 'Create your documentation in seconds with this template!'
+  title: 'Generate fake data on demand.'
+  description: 'Faker PHP allows you to easily generate mock data for your tests, providing a quick and flexible way to simulate realistic data effortlessly—perfect for creating robust development and testing environments.'
   orientation: horizontal
-  headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
-    icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: '/getting-started'
+      to: '/getting-started/usage#installation'
       size: lg
-    - label: Use this template
-      icon: i-simple-icons-github
+    - label: Star on Github
+      icon: i-mdi-github
       size: lg
       color: gray
-      to: https://github.com/nuxt-ui-pro/docs
+      to: https://github.com/xefi/faker-php
       target: _blank
   code: |
     ```bash [Terminal]
-    npx nuxi init -t github:nuxt-ui-pro/docs
+    composer require xefi/faker-php
     ```
 features:
-  title: 'All-in-one docs template'
-  links:
-    - label: 'Explore Nuxt UI Pro'
-      icon: 'i-simple-icons-nuxtdotjs'
-      trailingIcon: 'i-heroicons-arrow-right-20-solid'
-      color: 'gray'
-      to: 'https://ui.nuxt.com/pro'
-      target: '_blank'
-      size: lg
+  title: 'Start your next project with a powerful testing environment'
   items:
-    - title: 'Nuxt 3'
-      description: 'Powered by Nuxt 3 for optimal performances and SEO.'
-      icon: 'i-simple-icons-nuxtdotjs'
-      to: 'https://nuxt.com'
-      target: '_blank'
-    - title: 'Markdown'
-      description: 'Write your pages with MDC thanks to Nuxt Content.'
-      icon: 'i-simple-icons-markdown'
-      to: 'https://content.nuxt.com'
-      target: '_blank'
-    - title: 'Nuxt UI'
-      description: 'Offers a very large set of full customizable components.'
-      icon: 'i-heroicons-sparkles-20-solid'
-      to: 'https://ui.nuxt.com'
-      target: '_blank'
-    - title: 'TypeScript'
-      description: 'A fully typed development experience.'
-      icon: 'i-simple-icons-typescript'
-      to: 'https://www.typescriptlang.org'
-      target: '_blank'
-    - title: 'Nuxt Studio'
-      description: 'Supported by Nuxt Studio for fast updates and previews.'
-      icon: 'i-simple-icons-nuxtdotjs'
-      to: 'https://nuxt.studio'
-      target: '_blank'
-    - title: 'Search'
-      description: 'A full-text search modal empowered by Fuse.js.'
-      icon: 'i-heroicons-magnifying-glass-20-solid'
-      to: 'https://ui.nuxt.com/pro/components/docs/docs-search'
-      target: '_blank'
+    - title: 'Laravel / Symfony integrations'
+      description: 'Fully integrates with Laravel and Symfony'
+      icon: 'i-mdi-link'
+    - title: 'Locales'
+      description: 'Translate faker to your own language.'
+      icon: 'i-heroicons-globe-alt'
+    - title: 'Powerful'
+      description: 'Cover all your testing needs.'
+      icon: 'i-mdi-flash-outline'
+    - title: 'Lightweight'
+      description: 'Faker weights approximately 48kB.'
+      icon: 'i-fe-feather'
+    - title: 'Auto-complete'
+      description: 'Dynamically adapt Faker auto completion runtime.'
+      icon: 'i-mdi-auto-fix'
+    - title: 'Extensible'
+      description: 'Install as many extensions as you''d like.'
+      icon: 'i-mdi-extension-outline'
+basic_usages:
+  - title: 'Instantiate Faker'
+    terminal: |
+      ```php
+        $faker = new Xefi\Faker\Faker();
+      ```
+    code: |
+      ```php
+        $faker->name() // John Doe
+        $faker->name() // Charles Brown
+
+        $faker->sentence() // equus canis populus servus aquaeductus fidelitas
+
+        $faker->iban() // PX41711762752955497163783543
+      ```
+get_started:
+  label: Get started
+  icon: i-heroicons-arrow-right-20-solid
+  trailing: true
+  to: '/getting-started/usage#installation'
+  size: xl

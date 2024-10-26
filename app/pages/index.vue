@@ -59,6 +59,7 @@ useSeoMeta({
     <ULandingSection
       :title="page.features.title"
       :links="page.features.links"
+      :ui="{wrapper: 'pt-0 sm:pt-0 pb-10 sm:pb-10'}"
     >
       <UPageGrid>
         <ULandingCard
@@ -68,5 +69,30 @@ useSeoMeta({
         />
       </UPageGrid>
     </ULandingSection>
+
+    <span class="w-0 sm:pt-0 pt-0" id="first-setup"></span>
+
+    <ULandingSection :ui="{wrapper: 'pb-0 mb-0 sm:pb-7 pb-5'}"
+                     title="Basic usage"
+    />
+
+    <template v-for="(basic_usage, index) in page.basic_usages">
+      <ULandingSection v-bind="basic_usage" :align="index % 2 === 0 ? 'left' : 'right'" :ui="{wrapper: 'pt-0 sm:pt-0 pb-8 sm:pb-5'}">
+        <template #description>
+          <span v-if="basic_usage.description" v-html="basic_usage.description" />
+          <MDC v-if="basic_usage.terminal" :value="basic_usage.terminal" tag="div" class="prose prose-primary dark:prose-invert mx-auto" />
+        </template>
+        <MDC :value="basic_usage.code" tag="pre" class="prose prose-primary dark:prose-invert max-w-none"  />
+      </ULandingSection>
+    </template>
+
+    <ULandingSection :ui="{wrapper: 'pt-0 mt-0 sm:pt-7 pt-5'}"
+                     title="Get Started !"
+    >
+      <div class="text-center">
+        <UButton v-bind="page.get_started" />
+      </div>
+    </ULandingSection>
+
   </div>
 </template>
