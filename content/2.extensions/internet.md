@@ -1,6 +1,6 @@
 ---
-title: Sdl
-description: Sdl extension for Xefi Faker PHP
+title: Internet
+description: Internet extension for Xefi Faker PHP
 ---
 
 ## Sdl
