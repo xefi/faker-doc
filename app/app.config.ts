@@ -22,17 +22,17 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt-ui-pro/docs',
+      'to': 'https://github.com/xefi/faker-php',
       'target': '_blank',
-      'aria-label': 'Docs template on GitHub'
+      'aria-label': 'Find the project on GitHub'
     }]
   },
   footer: {
-    credits: 'Copyright © 2023',
+    credits: 'Copyright © 2024',
     colorMode: false,
     links: [{
-      'icon': 'i-simple-icons-nuxtdotjs',
-      'to': 'https://nuxt.com',
+      'icon': 'i-heroicons-ellipsis-horizontal-circle',
+      'to': 'https://xefi.com',
       'target': '_blank',
       'aria-label': 'Nuxt Website'
     }, {
