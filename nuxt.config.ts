@@ -9,7 +9,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    'nuxt-gtag'
   ],
 
   hooks: {
