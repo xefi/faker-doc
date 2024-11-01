@@ -19,7 +19,7 @@ hero:
       target: _blank
   code: |
     ```bash [Terminal]
-    composer require xefi/faker-php
+    composer require --dev xefi/faker-php
     ```
 features:
   title: 'Start your next project with a powerful testing environment'
