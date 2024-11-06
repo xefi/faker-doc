@@ -1,4 +1,20 @@
-<svg width="4024" height="2681" viewBox="0 0 4024 2681" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4024 2679.5H2481.5L1956 2123.8L1942.19 453L2354.77 4.5H3926.22L2735.82 1296.26L4024 2679.5Z" fill="#FDFDFD"/>
-<path d="M1449.5 2681H0L1276 1295.5L86.5 0H1536.5L2732 1295.5L1449.5 2681Z" fill="#E10600"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.05 50">
+  <defs>
+    <style>
+      .cls-1 {
+      fill: #fefefe;
+      }
+
+      .cls-1, .cls-2 {
+      stroke-width: 0px;
+      }
+
+      .cls-2 {
+      fill: #e94646;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m75.05,49.97h-28.77l-9.8-10.36-.26-31.16L43.92.08h29.31l-22.2,24.09,24.02,25.8Z"/>
+  <path class="cls-2" d="m27.03,50H0l23.8-25.84L1.61,0h27.04l22.3,24.16-23.92,25.84Z"/>
 </svg>
