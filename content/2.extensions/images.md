@@ -15,6 +15,8 @@ composer require --dev xefi/faker-php-images
 
 Returns a [Image](https://github.com/Intervention/image/blob/develop/src/Image.php) object from the intervention/image package ([documentation](https://image.intervention.io/v3)).
 
+Example : ![1280 x 720 example](/img/images-extension-1280x720.png)
+
 ```php
 $faker->image(width: 1280, height: 720, backgroundColor: '#cccccc', textColor: '#333333');
 
