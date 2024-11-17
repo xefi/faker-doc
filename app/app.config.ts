@@ -41,11 +41,11 @@ export default defineAppConfig({
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/lomkit/laravel-rest-api-doc/edit/master/content',
+      edit: 'https://github.com/xefi/faker-doc/edit/main/content',
       links: [{
         icon: 'i-heroicons-star',
         label: 'Star on GitHub',
-        to: 'https://github.com/lomkit/laravel-rest-api',
+        to: 'https://github.com/xefi/faker-php',
         target: '_blank'
       }]
     }
