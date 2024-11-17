@@ -1,6 +1,6 @@
 ---
-title: French (France)
-description: French France locale for Xefi Faker PHP
+title: English (United States)
+description: English United States locale for Xefi Faker PHP
 ---
 
 You need to require the locale to be able to use it
