@@ -18,7 +18,7 @@ Returns a [Image](https://github.com/Intervention/image/blob/develop/src/Image.p
 Example : ![1280 x 720 example](/img/images-extension-1280x720.png)
 
 ```php
-$faker->image(width: 1280, height: 720, backgroundColor: '#cccccc', textColor: '#333333');
+$faker->image(width: 1280, height: 720, backgroundColor: '#cccccc', textColor: '#333333', text: 'My Placeholder text');
 
 // Examples for saving the image
 $image = $faker->image();
