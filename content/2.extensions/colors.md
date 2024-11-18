@@ -3,6 +3,8 @@ title: Colors
 description: Colors extension for Xefi Faker PHP
 ---
 
+Please be aware that the base package only provide latin colors, if you want to have more specialized content please install a locale.
+
 ## Color Name
 
 ```php
