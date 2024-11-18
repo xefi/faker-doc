@@ -3,6 +3,8 @@ title: Financial
 description: Financial extension for Xefi Faker PHP
 ---
 
+Please be aware that the base package only provide random fake iban, if you want to have more specialized content please install a locale.
+
 ## Iban
 
 Country code: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2  

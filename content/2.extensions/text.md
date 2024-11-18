@@ -3,6 +3,8 @@ title: Text
 description: Text extension for Xefi Faker PHP
 ---
 
+Please be aware that the base package only provide latin text, if you want to have more specialized content please install a locale.
+
 ## Words
 
 ```php
