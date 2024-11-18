@@ -12,7 +12,7 @@ $faker->digit(); // 1
 ## Number
 
 ```php
-$faker->numberBetween(min: 0, max: 255) // 164
+$faker->number(min: 0, max: 255) // 164
 ```
 
 ## Float
