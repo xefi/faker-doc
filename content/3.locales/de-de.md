@@ -16,14 +16,39 @@ $faker = new Xefi\Faker\Faker('de_DE');
 
 ## Address
 
-#### Department
-```php
-$faker->department(); // ['BW' => 'Baden-Württemberg'];
-```
-
 #### Region
 ```php
-echo $faker->region(); // East
+echo $faker->region(); // ['BW' => 'Baden-Württemberg'];
+```
+
+#### City
+```php
+echo $faker->city(); // Bonn
+```
+
+#### House Number
+```php
+echo $faker->streetName(); // 174
+```
+
+#### Street Name
+```php
+echo $faker->streetName(); // Beethoven Ring
+```
+
+#### Street Address
+```php
+echo $faker->streetAddress(); // Wilhelm Weg 170
+```
+
+#### Zip code
+```php
+echo $faker->zipCode(); // 33950
+```
+
+#### Full Address
+```php
+echo $faker->fullAddress(); // Kleist Ring 17, 41661 Braunschweig, Thüringen
 ```
 
 ## Colors
@@ -40,6 +65,11 @@ $faker->colorName() // Schwarz
 ```
 
 ## Company
+
+#### Company
+```php
+$faker->company(); // Lindholm Logistik
+```
 
 #### Ust IdNr
 ```php

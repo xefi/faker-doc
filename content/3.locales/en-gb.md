@@ -26,6 +26,36 @@ $faker->department(); // ['SCT' => 'Banffshire']
 echo $faker->region(); // England
 ```
 
+#### City
+```php
+echo $faker->city(); // Cardiff
+```
+
+#### Street Name
+```php
+echo $faker->streetName(); // Southfield Drive
+```
+
+#### Street Address
+```php
+echo $faker->streetAddress(); // 104 Southfield Drive
+```
+
+#### House Number
+```php
+echo $faker->streetName(); // 104
+```
+
+#### Post code
+```php
+echo $faker->postCode(); // LD40 2QH
+```
+
+#### Full Address
+```php
+echo $faker->fullAddress(); // 194 The Crescent, Coventry, Carmarthenshire, FI51 9FG
+```
+
 ## Colors
 
 #### Safe Color Name
@@ -41,12 +71,17 @@ $faker->colorName() // DarkCyan
 
 ## Company
 
-#### Ust IdNr
+#### Company
+```php
+$faker->company(); // MediCore Diagnostics
+```
+
+#### VAT Number
 ```php
 $faker->vatNumber(); // GB783920473
 ```
 
-#### Handelsregisternummer
+#### Company Registration Number
 ```php
 $faker->companyRegistrationNumber(); // KH839263
 ```
