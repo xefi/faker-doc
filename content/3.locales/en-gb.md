@@ -23,12 +23,12 @@ $faker->department(); // ['SCT' => 'Banffshire']
 
 #### Region
 ```php
- $faker->region(); // England
+$faker->region(); // England
 ```
 
 #### City
 ```php
- $faker->city(); // Cardiff
+$faker->city(); // Cardiff
 ```
 
 #### Street Name
