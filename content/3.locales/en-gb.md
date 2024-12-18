@@ -23,37 +23,37 @@ $faker->department(); // ['SCT' => 'Banffshire']
 
 #### Region
 ```php
-echo $faker->region(); // England
+ $faker->region(); // England
 ```
 
 #### City
 ```php
-echo $faker->city(); // Cardiff
+ $faker->city(); // Cardiff
 ```
 
 #### Street Name
 ```php
-echo $faker->streetName(); // Southfield Drive
+$faker->streetName(); // Southfield Drive
 ```
 
 #### Street Address
 ```php
-echo $faker->streetAddress(); // 104 Southfield Drive
+$faker->streetAddress(); // 104 Southfield Drive
 ```
 
 #### House Number
 ```php
-echo $faker->streetName(); // 104
+$faker->streetName(); // 104
 ```
 
 #### Post code
 ```php
-echo $faker->postCode(); // LD40 2QH
+$faker->postCode(); // LD40 2QH
 ```
 
 #### Full Address
 ```php
-echo $faker->fullAddress(); // 194 The Crescent, Coventry, Carmarthenshire, FI51 9FG
+$faker->fullAddress(); // 194 The Crescent, Coventry, Carmarthenshire, FI51 9FG
 ```
 
 ## Colors
