@@ -18,37 +18,37 @@ $faker = new Xefi\Faker\Faker('de_DE');
 
 #### Region
 ```php
-echo $faker->region(); // ['BW' => 'Baden-Württemberg'];
+$faker->region(); // ['BW' => 'Baden-Württemberg'];
 ```
 
 #### City
 ```php
-echo $faker->city(); // Bonn
+$faker->city(); // Bonn
 ```
 
 #### House Number
 ```php
-echo $faker->streetName(); // 174
+$faker->streetName(); // 174
 ```
 
 #### Street Name
 ```php
-echo $faker->streetName(); // Beethoven Ring
+$faker->streetName(); // Beethoven Ring
 ```
 
 #### Street Address
 ```php
-echo $faker->streetAddress(); // Wilhelm Weg 170
+$faker->streetAddress(); // Wilhelm Weg 170
 ```
 
 #### Zip code
 ```php
-echo $faker->zipCode(); // 33950
+$faker->zipCode(); // 33950
 ```
 
 #### Full Address
 ```php
-echo $faker->fullAddress(); // Kleist Ring 17, 41661 Braunschweig, Thüringen
+$faker->fullAddress(); // Kleist Ring 17, 41661 Braunschweig, Thüringen
 ```
 
 ## Colors
