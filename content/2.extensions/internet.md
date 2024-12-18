@@ -21,6 +21,12 @@ $faker->tld(); // co
 $faker->domain(); // weqgcibq.co
 ```
 
+## Email
+
+```php
+$faker->email(); // gnqkpjszufkep@gtbwunn.info
+```
+
 ## Ipv4
 
 ```php

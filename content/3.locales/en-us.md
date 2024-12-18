@@ -16,14 +16,45 @@ $faker = new Xefi\Faker\Faker('en_US');
 
 ## Address
 
-#### Department
+#### State
 ```php
-$faker->department(); // ['AL' => 'Alabama'];
+$faker->state(); // ['AL' => 'Alabama'];
 ```
 
 #### Region
 ```php
-echo $faker->region(); // "Northeast"
+$faker->region(); // "Northeast"
+```
+
+#### House Number
+```php
+$faker->houseNumber(); // 129
+```
+
+#### Street Name
+```php
+$faker->streetName(); // Woodland Drive
+```
+
+#### Street Address
+```php
+$faker->streetAddress(); // 198 Sunset Court
+```
+
+#### Zip code
+```php
+// Format : "5-digits" (XXXXX) or "9-digits" (XXXXX-XXXX)
+$faker->zipCode(format: '5-digits'); // 32371
+```
+
+#### City
+```php
+$faker->city(); // Oklahoma City
+```
+
+#### Full Address
+```php
+$faker->fullAddress(); // 39 Silver Court, Austin, New Mexico 96990
 ```
 
 ## Colors
@@ -40,6 +71,11 @@ $faker->colorName() // DarkKhaki
 ```
 
 ## Company
+
+#### Company
+```php
+$faker->company(); // IronTrail Manufacturing
+```
 
 #### Ein
 ```php

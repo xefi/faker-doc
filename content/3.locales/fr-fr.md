@@ -23,7 +23,37 @@ $faker->department(); // ['18' => 'Cher'];
 
 #### Region
 ```php
-echo $faker->region(); // "Saint-Pierre-et-Miquelon"
+$faker->region(); // "Saint-Pierre-et-Miquelon"
+```
+
+#### City
+```php
+$faker->city(); // Lille
+```
+
+#### Post code
+```php
+$faker->postCode(); // 79295
+```
+
+#### House Number
+```php
+$faker->streetName(); // 1405
+```
+
+#### Street Name
+```php
+$faker->streetName(); // Chemin du Moulin
+```
+
+#### Street Address
+```php
+$faker->streetAddress(); // 1405 Chemin du Moulin
+```
+
+#### Full Address
+```php
+$faker->fullAddress(); // 1405 Chemin du Moulin, 79295 Lille (Cher)
 ```
 
 ## Colors
@@ -40,6 +70,11 @@ $faker->colorName() // BlancAntique
 ```
 
 ## Company
+
+#### Company
+```php
+$faker->company(); // Alpille Informatique
+```
 
 #### Siret
 ```php
