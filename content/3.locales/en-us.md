@@ -23,38 +23,38 @@ $faker->state(); // ['AL' => 'Alabama'];
 
 #### Region
 ```php
-echo $faker->region(); // "Northeast"
+$faker->region(); // "Northeast"
 ```
 
 #### House Number
 ```php
-echo $faker->houseNumber(); // 129
+$faker->houseNumber(); // 129
 ```
 
 #### Street Name
 ```php
-echo $faker->streetName(); // Woodland Drive
+$faker->streetName(); // Woodland Drive
 ```
 
 #### Street Address
 ```php
-echo $faker->streetAddress(); // 198 Sunset Court
+$faker->streetAddress(); // 198 Sunset Court
 ```
 
 #### Zip code
 ```php
 // Format : "5-digits" (XXXXX) or "9-digits" (XXXXX-XXXX)
-echo $faker->zipCode(format: '5-digits'); // 32371
+$faker->zipCode(format: '5-digits'); // 32371
 ```
 
 #### City
 ```php
-echo $faker->city(); // Oklahoma City
+$faker->city(); // Oklahoma City
 ```
 
 #### Full Address
 ```php
-echo $faker->fullAddress(); // 39 Silver Court, Austin, New Mexico 96990
+$faker->fullAddress(); // 39 Silver Court, Austin, New Mexico 96990
 ```
 
 ## Colors
