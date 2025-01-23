@@ -38,7 +38,7 @@ $faker->postCode(); // 79295
 
 #### House Number
 ```php
-$faker->streetName(); // 1405
+$faker->houseNumber(); // 1405
 ```
 
 #### Street Name
