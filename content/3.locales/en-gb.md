@@ -43,7 +43,7 @@ $faker->streetAddress(); // 104 Southfield Drive
 
 #### House Number
 ```php
-$faker->streetName(); // 104
+$faker->houseNumber(); // 104
 ```
 
 #### Post code
