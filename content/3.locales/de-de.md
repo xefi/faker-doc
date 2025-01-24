@@ -28,7 +28,7 @@ $faker->city(); // Bonn
 
 #### House Number
 ```php
-$faker->streetName(); // 174
+$faker->houseNumber(); // 174
 ```
 
 #### Street Name
