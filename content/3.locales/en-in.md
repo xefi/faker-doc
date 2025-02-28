@@ -23,7 +23,7 @@ $faker->state(); // Uttarakhand
 
 #### House Number
 ```php
-echo $faker->houseNumber(); // 104
+$faker->houseNumber(); // 104
 ```
 
 #### Street Name
