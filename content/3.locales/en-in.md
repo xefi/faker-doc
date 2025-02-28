@@ -43,7 +43,7 @@ echo $faker->zipCode(); // 861325
 
 #### City
 ```php
-echo $faker->city(); // Mumbai
+$faker->city(); // Mumbai
 ```
 
 #### Full Address
