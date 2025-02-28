@@ -28,7 +28,7 @@ echo $faker->houseNumber(); // 104
 
 #### Street Name
 ```php
-echo $faker->streetName(); // Hills Rajpath
+$faker->streetName(); // Hills Rajpath
 ```
 
 #### Street Address
