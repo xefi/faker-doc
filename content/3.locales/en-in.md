@@ -18,7 +18,7 @@ $faker = new Xefi\Faker\Faker('en_IN');
 
 #### State
 ```php
-echo $faker->state(); // Uttarakhand
+$faker->state(); // Uttarakhand
 ```
 
 #### House Number
