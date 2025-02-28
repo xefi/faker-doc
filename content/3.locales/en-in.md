@@ -33,7 +33,7 @@ echo $faker->streetName(); // Hills Rajpath
 
 #### Street Address
 ```php
-echo $faker->streetAddress(); // 33, Chowraha Residency
+$faker->streetAddress(); // 33, Chowraha Residency
 ```
 
 #### Zip code
