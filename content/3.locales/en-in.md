@@ -38,7 +38,7 @@ $faker->streetAddress(); // 33, Chowraha Residency
 
 #### Zip code
 ```php
-echo $faker->zipCode(); // 861325
+$faker->zipCode(); // 861325
 ```
 
 #### City
