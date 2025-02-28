@@ -48,7 +48,7 @@ echo $faker->city(); // Mumbai
 
 #### Full Address
 ```php
-echo $faker->fullAddress(); // 287, Path Church, Ahmedabad, Rajasthan 584416
+$faker->fullAddress(); // 287, Path Church, Ahmedabad, Rajasthan 584416
 ```
 
 ## Colors
