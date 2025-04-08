@@ -8,7 +8,7 @@ You need to require the locale to be able to use it
 composer require --dev xefi/faker-php-locales-en-us
 ```
 
-Be sure to setup faker with the `fr_FR` locale to be able to use this:
+Be sure to setup faker with the `en_US` locale to be able to use this:
 
 ```php
 $faker = new Xefi\Faker\Faker('en_US');
