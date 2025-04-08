@@ -14,3 +14,9 @@ $faker->randomElement(['first', 'second', 'third', 'fourth']); // second
 ```php
 $faker->randomKey([['firstname' => 'John'], ['lastname' => 'Doe'], ['nickname' => 'Johnny'], ['login' => 'j.doe']]); // nickname
 ```
+
+## Random Key Number
+
+```php
+$faker->randomKeyNumber([['firstname' => 'John'], ['lastname' => 'Doe'], ['nickname' => 'Johnny'], ['login' => 'j.doe']]); // 2
+```
