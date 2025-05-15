@@ -1,6 +1,6 @@
 ---
 title: German (Germany)
-description: German Germany locale for Xefi Faker PHP
+description: German locale for Xefi Faker PHP
 ---
 
 You need to require the locale to be able to use it
