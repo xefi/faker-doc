@@ -73,6 +73,11 @@ $faker->colorName() // BlancoFloral
 $faker->company(); // Grupo Mango
 ```
 
+#### NIF
+```php
+$faker->nif(); // P9096890A
+```
+
 #### Company number
 ```php
 $faker->companyNumber(); // 0226229578
