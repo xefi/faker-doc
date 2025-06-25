@@ -91,6 +91,8 @@ Please see [base method](/extensions/financial#iban) for details.
 $faker->iban(countryCode: 'PK', format: 'See code'); // PK72JJED92839147382930
 ```
 
+#### IFSC
+
 ```php
 $faker->ifsc(); // G4855732
 ```
