@@ -1,6 +1,6 @@
 ---
-title: French (Swiss)
-description: French Swiss locale for Xefi Faker PHP
+title: French (Switzerland)
+description: French Switzerland locale for Xefi Faker PHP
 ---
 
 You need to require the locale to be able to use it
