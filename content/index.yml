@@ -34,7 +34,7 @@ features:
       description: 'Cover all your testing needs.'
       icon: 'i-mdi-flash-outline'
     - title: 'Lightweight'
-      description: 'Faker weights approximately 48kB.'
+      description: 'Faker weights approximately 30kB.'
       icon: 'i-fe-feather'
     - title: 'Auto-complete'
       description: 'Dynamically adapt Faker auto completion runtime.'
