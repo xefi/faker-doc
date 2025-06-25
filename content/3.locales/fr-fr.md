@@ -18,12 +18,12 @@ $faker = new Xefi\Faker\Faker('fr_FR');
 
 #### Department
 ```php
-$faker->department(); // ['18' => 'Cher'];
+$faker->department(); // ['18' => 'Cher']
 ```
 
 #### Region
 ```php
-$faker->region(); // "Saint-Pierre-et-Miquelon"
+$faker->region(); // Saint-Pierre-et-Miquelon
 ```
 
 #### City
