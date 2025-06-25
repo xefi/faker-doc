@@ -1,6 +1,6 @@
 ---
 title: Spanish (Spain)
-description: Spanish Spain locale for Xefi Faker PHP
+description: Spanish locale for Xefi Faker PHP
 ---
 
 You need to require the locale to be able to use it
