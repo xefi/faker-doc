@@ -33,7 +33,7 @@ $faker->city(); // Lille
 
 #### Post code
 ```php
-$faker->postCode(); // 79295
+$faker->postcode(); // 79295
 ```
 
 #### House Number
