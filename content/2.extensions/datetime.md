@@ -14,3 +14,9 @@ $faker->dateTime(fromTimestamp: '-30 years', toTimestamp: 'now'); // DateTime { 
 ```php
 $faker->timestamp(fromTimestamp: '-30 years', toTimestamp: 'now'); // 1584424687
 ```
+
+## Timezone
+
+```php
+$faker->timezone(); // Europe/Stockholm
+```
