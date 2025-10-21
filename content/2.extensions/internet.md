@@ -44,3 +44,9 @@ $faker->ipv6(); // 4633:5bee:b1f1:3ac9:4c3d:a0cd:4108:c90f
 ```php
 $faker->macAddress(); // d0:4d:96:4f:10:e1
 ```
+
+## Geo Location
+
+```php
+$faker->geoLocation(); // 48.85661425, 2.35222197
+```
