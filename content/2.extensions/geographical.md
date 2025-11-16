@@ -1,6 +1,6 @@
 ---
-title: Geolocation
-description: Geolocation extension for Xefi Faker PHP
+title: Geographical
+description: Geographical extension for Xefi Faker PHP
 ---
 
 ## Geolocation
