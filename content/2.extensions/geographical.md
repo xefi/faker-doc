@@ -6,7 +6,7 @@ description: Geographical extension for Xefi Faker PHP
 ## Geolocation
 
 ```php
-$faker->geoLocation(); // -21.40444148, 149.5540524
+$faker->geoLocation(); // -21.40444148, 14.5540524
 ```
 
 ## Latitude
