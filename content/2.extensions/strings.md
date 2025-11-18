@@ -38,3 +38,15 @@ $faker->semver(); // 2.80.93
 ```php
 $faker->emoji(); // 😄
 ```
+
+## UUID
+
+```php
+$faker->uuid(); // 550e8400-e29b-41d4-a716-446655440000
+```
+
+## ULID
+
+```php
+$faker->uuid(); // 01F8MECHZX3TBDSZ7XRADM79XV
+```
