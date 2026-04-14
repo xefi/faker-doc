@@ -39,13 +39,21 @@ $faker->url(); // https://weqgcibq.co/page
 $faker->email(); // gnqkpjszufkep@gtbwunn.info
 ```
 
-## Ipv4
+## IP
+
+```php
+$faker->ip();
+// 202.255.231.155
+// 4633:5bee:b1f1:3ac9:4c3d:a0cd:4108:c90f
+```
+
+## IPv4
 
 ```php
 $faker->ipv4(); // 202.255.231.155
 ```
 
-## Ipv6
+## IPv6
 
 ```php
 $faker->ipv6(); // 4633:5bee:b1f1:3ac9:4c3d:a0cd:4108:c90f
