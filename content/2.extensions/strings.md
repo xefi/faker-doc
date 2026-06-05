@@ -48,5 +48,5 @@ $faker->uuid(); // 550e8400-e29b-41d4-a716-446655440000
 ## ULID
 
 ```php
-$faker->uuid(); // 01F8MECHZX3TBDSZ7XRADM79XV
+$faker->ulid(); // 01F8MECHZX3TBDSZ7XRADM79XV
 ```
