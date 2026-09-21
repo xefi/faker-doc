@@ -21,12 +21,6 @@ $faker->tld(); // co
 $faker->domain(); // weqgcibq.co
 ```
 
-## URI
-
-```php
-$faker->uri(); // https://weqgcibq.co
-```
-
 ## URL
 
 ```php
