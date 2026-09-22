@@ -41,7 +41,10 @@ export default defineNuxtConfig({
   routeRules: {
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true },
-    '/api/search.json': { prerender: true }
+    '/api/search.json': { prerender: true },
+    // Entry points for language models and AI coding agents, see https://llmstxt.org
+    '/llms.txt': { prerender: true },
+    '/llms-full.txt': { prerender: true }
   },
 
   devtools: {
