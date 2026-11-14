@@ -33,7 +33,7 @@ $faker->city(); // Genève
 
 #### Post code
 ```php
-$faker->postCode(); // 2805
+$faker->postcode(); // 2805
 ```
 
 #### House Number
@@ -119,7 +119,7 @@ $faker->lastName() // Steiner
 
 ```php
 // Formated: "756.xxxx.xxxx.xx"
-$faker->avs(formated: false) // 7564038982068
+$faker->avs(formatted: false) // 7564038982068
 ```
 
 ## Text

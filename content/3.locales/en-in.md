@@ -86,6 +86,22 @@ Please see [base method](/extensions/financial#iban) for details
 $faker->iban(countryCode: 'IN', format: 'See code') // IN28CU9011517189912178556470
 ```
 
+#### IFSC
+
+Indian Financial System Code (4 letters bank code followed by a 7 digits branch code)
+
+```php
+$faker->ifsc(); // HDFC4825913
+```
+
+#### PAN
+
+Permanent Account Number (5 letters, 4 digits, 1 letter)
+
+```php
+$faker->pan(); // ABCDE1234F
+```
+
 ## Person
 
 #### Name

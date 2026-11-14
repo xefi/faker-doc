@@ -33,7 +33,7 @@ $faker->city(); // Bruxelles
 
 #### Post code
 ```php
-$faker->postCode(); // 5600
+$faker->postcode(); // 5600
 ```
 
 #### House Number
@@ -121,7 +121,7 @@ This field corresponds to the Belgian "Numéro de registre national", also known
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
 // Formated: "xxxx-xxxx-xx"
-$faker->rrn(gender: 'M', formated: true) // 12 34 56 7890 12
+$faker->rrn(gender: 'M', formatted: true) // 12 34 56 7890 12
 ```
 
 ## Text
