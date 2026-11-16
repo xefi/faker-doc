@@ -1,62 +1,63 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ['@nuxt/ui-pro'],
-
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/ui',
-    '@nuxthq/studio',
+    '@nuxt/content',
     'nuxt-og-image',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     'nuxt-gtag'
   ],
 
-  hooks: {
-    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
-    'components:extend': (components) => {
-      const globals = components.filter(c => ['UButton', 'UIcon'].includes(c.pascalName))
-
-      globals.forEach(c => c.global = true)
-    }
+  devtools: {
+    enabled: true
   },
 
-  ui: {
-    icons: ['heroicons', 'simple-icons']
+  css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://faker-php.xefi.com',
+    name: 'Faker PHP - Generate fake data on demand'
   },
 
   content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['php', 'bash']
+        }
+      }
+    },
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  },
+
+  // The landing page renders its code blocks with <MDC>, which highlights them
+  // server side through this API route (disabled by default by Nuxt Content).
+  // It only runs while prerendering, the result ships in the page payload.
+  mdc: {
     highlight: {
+      noApiRoute: false,
       langs: ['php', 'bash']
     }
   },
 
-  colorMode: {
-    disableTransition: true
-  },
-
   routeRules: {
-    // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true },
-    '/api/search.json': { prerender: true },
     // Entry points for language models and AI coding agents, see https://llmstxt.org
     '/llms.txt': { prerender: true },
     '/llms-full.txt': { prerender: true }
   },
 
-  devtools: {
-    enabled: true
-  },
+  compatibilityDate: '2026-06-30',
 
-  typescript: {
-    strict: false
-  },
-
-  future: {
-    compatibilityVersion: 4
+  nitro: {
+    prerender: {
+      crawlLinks: true
+    }
   },
 
   eslint: {
@@ -68,5 +69,7 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2024-07-11'
+  ogImage: {
+    zeroRuntime: true
+  }
 })

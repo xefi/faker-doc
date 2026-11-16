@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: page } = await useAsyncData('index', () => queryCollection('landing').first())
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
 
 useSeoMeta({
   titleTemplate: '',
@@ -11,88 +14,75 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    <ULandingHero
-      v-if="page.hero"
-      v-bind="page.hero"
+  <div v-if="page">
+    <UPageHero
+      :title="page.hero.title"
+      :description="page.hero.description"
+      :links="page.hero.links"
+      :orientation="page.hero.orientation"
     >
-      <template #headline>
-        <UBadge
-          v-if="page.hero.headline"
-          variant="subtle"
-          size="lg"
-          class="relative rounded-full font-semibold"
-        >
-          <NuxtLink
-            :to="page.hero.headline.to"
-            target="_blank"
-            class="focus:outline-none"
-            tabindex="-1"
-          >
-            <span
-              class="absolute inset-0"
-              aria-hidden="true"
-            />
-          </NuxtLink>
-
-          {{ page.hero.headline.label }}
-
-          <UIcon
-            v-if="page.hero.headline.icon"
-            :name="page.hero.headline.icon"
-            class="ml-1 w-4 h-4 pointer-events-none"
-          />
-        </UBadge>
-      </template>
-
-      <template #title>
-        <MDC :value="page.hero.title" />
-      </template>
-
       <MDC
         :value="page.hero.code"
-        tag="pre"
-        class="prose prose-primary dark:prose-invert mx-auto"
+        tag="div"
+        class="max-w-none"
       />
-    </ULandingHero>
+    </UPageHero>
 
-    <ULandingSection
+    <UPageSection
       :title="page.features.title"
-      :links="page.features.links"
-      :ui="{wrapper: 'pt-0 sm:pt-0 pb-10 sm:pb-10'}"
+      :ui="{ container: 'pt-0 sm:pt-0 lg:pt-0 pb-10 sm:pb-10 lg:pb-10' }"
     >
       <UPageGrid>
-        <ULandingCard
+        <UPageCard
           v-for="(item, index) of page.features.items"
           :key="index"
           v-bind="item"
         />
       </UPageGrid>
-    </ULandingSection>
+    </UPageSection>
 
-    <span class="w-0 sm:pt-0 pt-0" id="first-setup"></span>
-
-    <ULandingSection :ui="{wrapper: 'pb-0 mb-0 sm:pb-7 pb-5'}"
-                     title="Basic usage"
+    <UPageSection
+      id="first-setup"
+      title="Basic usage"
+      :ui="{ container: 'pb-0 sm:pb-0 lg:pb-0 pt-5 sm:pt-7 lg:pt-7' }"
     />
 
-    <template v-for="(basic_usage, index) in page.basic_usages">
-      <ULandingSection v-bind="basic_usage" :align="index % 2 === 0 ? 'left' : 'right'" :ui="{wrapper: 'pt-0 sm:pt-0 pb-8 sm:pb-5'}">
-        <template #description>
-          <span v-if="basic_usage.description" v-html="basic_usage.description" />
-          <MDC v-if="basic_usage.terminal" :value="basic_usage.terminal" tag="div" class="prose prose-primary dark:prose-invert mx-auto" />
-        </template>
-        <MDC :value="basic_usage.code" tag="pre" class="prose prose-primary dark:prose-invert max-w-none"  />
-      </ULandingSection>
-    </template>
+    <UPageSection
+      v-for="(basicUsage, index) in page.basic_usages"
+      :key="index"
+      :title="basicUsage.title"
+      orientation="horizontal"
+      :reverse="index % 2 === 1"
+      :ui="{ container: 'pt-0 sm:pt-0 lg:pt-0 pb-8 sm:pb-5 lg:pb-5' }"
+    >
+      <template #description>
+        <MDC
+          v-if="basicUsage.description"
+          :value="basicUsage.description"
+          tag="div"
+        />
+        <MDC
+          v-if="basicUsage.terminal"
+          :value="basicUsage.terminal"
+          tag="div"
+          class="max-w-none"
+        />
+      </template>
 
-    <ULandingSection :ui="{wrapper: 'pt-0 mt-0 sm:pt-7 pt-5'}"
-                     title="Get Started !"
+      <MDC
+        :value="basicUsage.code"
+        tag="div"
+        class="max-w-none"
+      />
+    </UPageSection>
+
+    <UPageSection
+      title="Get Started !"
+      :ui="{ container: 'pt-5 sm:pt-7 lg:pt-7' }"
     >
       <div class="text-center">
         <UButton v-bind="page.get_started" />
       </div>
-    </ULandingSection>
-
+    </UPageSection>
   </div>
 </template>
