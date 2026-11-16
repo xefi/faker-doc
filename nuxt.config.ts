@@ -69,6 +69,72 @@ export default defineNuxtConfig({
     }
   },
 
+  // The static site has no icon API: bundle every icon the browser may render,
+  // or it falls back to the public Iconify API. The source scan misses the ones
+  // referenced from app.config.ts, content/index.yml and Nuxt UI's own defaults.
+  icon: {
+    clientBundle: {
+      scan: true,
+      icons: [
+        'fe:feather',
+        'heroicons:arrow-right-20-solid',
+        'heroicons:globe-alt',
+        'heroicons:pencil-square',
+        'heroicons:star',
+        'mdi:auto-fix',
+        'mdi:extension-outline',
+        'mdi:flash-outline',
+        'mdi:github',
+        'mdi:link',
+        'simple-icons:github',
+        'lucide:arrow-down',
+        'lucide:arrow-left',
+        'lucide:arrow-right',
+        'lucide:arrow-up',
+        'lucide:arrow-up-right',
+        'lucide:check',
+        'lucide:chevron-down',
+        'lucide:chevron-left',
+        'lucide:chevron-right',
+        'lucide:chevron-up',
+        'lucide:chevrons-left',
+        'lucide:chevrons-right',
+        'lucide:circle-alert',
+        'lucide:circle-check',
+        'lucide:circle-x',
+        'lucide:copy',
+        'lucide:copy-check',
+        'lucide:ellipsis',
+        'lucide:eye',
+        'lucide:eye-off',
+        'lucide:file',
+        'lucide:folder',
+        'lucide:folder-open',
+        'lucide:grip-vertical',
+        'lucide:hash',
+        'lucide:info',
+        'lucide:lightbulb',
+        'lucide:loader-circle',
+        'lucide:menu',
+        'lucide:minus',
+        'lucide:monitor',
+        'lucide:moon',
+        'lucide:panel-left-close',
+        'lucide:panel-left-open',
+        'lucide:plus',
+        'lucide:rotate-ccw',
+        'lucide:search',
+        'lucide:square',
+        'lucide:star',
+        'lucide:sun',
+        'lucide:terminal',
+        'lucide:triangle-alert',
+        'lucide:upload',
+        'lucide:x'
+      ]
+    }
+  },
+
   ogImage: {
     zeroRuntime: true
   }
