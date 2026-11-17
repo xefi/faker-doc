@@ -24,7 +24,8 @@ $faker->domain(); // weqgcibq.co
 ## URL
 
 ```php
-$faker->url(); // https://weqgcibq.co/page
+$faker->url(secure: true); // https://weqgcibq.co/page
+$faker->url(secure: false); // http://weqgcibq.co/page
 ```
 
 ## Email

@@ -34,7 +34,7 @@ $faker->city(); // Bilbao
 
 #### Post code
 ```php
-$faker->postCode(); // 18493
+$faker->postcode(); // 18493
 ```
 
 #### House Number

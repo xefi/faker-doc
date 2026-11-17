@@ -37,6 +37,11 @@ $faker->city(); // Karachi
 $faker->sectorBlock(); // F-11
 ```
 
+#### House Number
+```php
+$faker->houseNumber(); // 245
+```
+
 #### Street Name
 ```php
 $faker->streetName(); // Iqbal Road

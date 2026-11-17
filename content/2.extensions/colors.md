@@ -23,6 +23,12 @@ $faker->safeColorName() // Castaneus
 $faker->safeHexColor() // #22aacc
 ```
 
+## Hex Color
+
+```php
+$faker->hexColor() // #3f7ac2
+```
+
 ## Rgb Color As Array
 
 ```php

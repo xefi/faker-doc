@@ -121,7 +121,7 @@ This field corresponds to "Numéro d’Inscription au Répertoire" also called "
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
 // Formated: "x xx xx xx xxx xxx xx"
-$faker->nir(gender: 'M', formated: true) // 1 84 12 75 123 456 78
+$faker->nir(gender: 'M', formatted: true) // 1 84 12 75 123 456 78
 ```
 
 ## Text
