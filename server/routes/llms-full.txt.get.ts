@@ -1,10 +1,8 @@
-import { serverQueryContent } from '#content/server'
+import { queryCollection } from '@nuxt/content/server'
 
 export default eventHandler(async (event) => {
-  const documents = await serverQueryContent(event)
-    .where({ _type: 'markdown', navigation: { $ne: false } })
-    .sort({ _id: 1 })
-    .find()
+  const documents = (await queryCollection(event, 'docs').order('stem', 'ASC').all())
+    .filter(document => document.navigation !== false)
 
   const lines = [
     '# Faker PHP documentation',
@@ -17,7 +15,7 @@ export default eventHandler(async (event) => {
   let currentSection = ''
 
   for (const document of documents) {
-    const section = sectionOf(document._path || '')
+    const section = sectionOf(document.path || '')
 
     if (section !== currentSection) {
       currentSection = section
@@ -27,7 +25,7 @@ export default eventHandler(async (event) => {
     lines.push(
       `## ${document.title}`,
       '',
-      `Source: ${SITE_URL}${document._path}`,
+      `Source: ${SITE_URL}${document.path}`,
       ''
     )
 

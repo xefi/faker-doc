@@ -1,11 +1,13 @@
 export default defineAppConfig({
   ui: {
-    primary: 'red',
-    gray: 'slate',
+    colors: {
+      primary: 'red',
+      neutral: 'slate'
+    },
     footer: {
-      bottom: {
-        left: 'text-sm text-gray-500 dark:text-gray-400',
-        wrapper: 'border-t border-gray-200 dark:border-gray-800'
+      slots: {
+        root: 'border-t border-default',
+        left: 'text-sm text-muted'
       }
     }
   },
@@ -13,8 +15,10 @@ export default defineAppConfig({
     siteName: 'Faker PHP - Generate fake data on demand'
   },
   header: {
+    title: 'Faker PHP',
+    to: '/',
     logo: {
-      alt: '',
+      alt: 'Xefi',
       light: '/xefi-light.svg',
       dark: '/xefi-dark.svg'
     },
@@ -28,7 +32,7 @@ export default defineAppConfig({
     }]
   },
   footer: {
-    credits: 'Copyright © ' + (new Date().getFullYear()),
+    credits: `Copyright © ${new Date().getFullYear()}`,
     colorMode: false,
     links: [{
       'icon': 'i-mdi-github',

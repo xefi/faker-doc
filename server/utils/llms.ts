@@ -2,16 +2,34 @@ export const SITE_URL = 'https://faker-php.xefi.com'
 
 const SECTION_TITLES: Record<string, string> = {
   'getting-started': 'Getting Started',
-  extensions: 'Extensions',
-  locales: 'Locales'
+  'extensions': 'Extensions',
+  'locales': 'Locales'
 }
 
 interface AstNode {
   type?: string
   tag?: string
   value?: string
-  props?: Record<string, any>
+  props?: Record<string, unknown>
   children?: AstNode[]
+}
+
+// Nuxt Content stores bodies as minimark: a text node is a string,
+// an element is a [tag, props, ...children] tuple.
+type MinimarkNode = string | [string, Record<string, unknown>, ...MinimarkNode[]]
+
+interface MinimarkBody {
+  value?: MinimarkNode[]
+}
+
+function toAst(node: MinimarkNode): AstNode {
+  if (typeof node === 'string') {
+    return { type: 'text', value: node }
+  }
+
+  const [tag, props, ...children] = node
+
+  return { type: 'element', tag, props, children: children.map(toAst) }
 }
 
 export function sectionOf(path: string): string {
@@ -32,7 +50,7 @@ function inline(nodes: AstNode[] = []): string {
       case 'code':
         return `\`${inline(node.children)}\``
       case 'a':
-        return `[${inline(node.children)}](${absolute(node.props?.href)})`
+        return `[${inline(node.children)}](${absolute(String(node.props?.href ?? ''))})`
       case 'strong':
         return `**${inline(node.children)}**`
       case 'em':
@@ -127,7 +145,7 @@ function block(nodes: AstNode[] = [], headingOffset = 0): string {
 
     switch (node.tag) {
       case 'pre':
-        return `\`\`\`${node.props?.language || ''}\n${(node.props?.code || inline(node.children)).replace(/\n+$/, '')}\n\`\`\``
+        return `\`\`\`${node.props?.language || ''}\n${String(node.props?.code || inline(node.children)).replace(/\n+$/, '')}\n\`\`\``
       case 'ul':
         return listItems(node.children, () => '- ')
       case 'ol':
@@ -149,6 +167,6 @@ function block(nodes: AstNode[] = [], headingOffset = 0): string {
   }).filter(Boolean).join('\n\n').replace(/\n{3,}/g, '\n\n')
 }
 
-export function renderBody(body?: AstNode, headingOffset = 0): string {
-  return block(body?.children, headingOffset).trim()
+export function renderBody(body?: MinimarkBody, headingOffset = 0): string {
+  return block((body?.value || []).map(toAst), headingOffset).trim()
 }

@@ -1,29 +1,36 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content'
+import type { ContentNavigationItem } from '@nuxt/content'
 
-const navigation = inject<NavItem[]>('navigation', [])
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
 const { header } = useAppConfig()
 </script>
 
 <template>
-  <UHeader>
-    <template #logo>
-      <UColorModeImage v-bind="{ class: 'h-6 w-auto', ...header?.logo }" />
-      Faker PHP
-    </template>
-
-    <template
+  <UHeader
+    :ui="{ center: 'flex-1' }"
+    :to="header?.to || '/'"
+  >
+    <UContentSearchButton
       v-if="header?.search"
-      #center
-    >
-      <UContentSearchButton class="hidden lg:flex" />
+      :collapsed="false"
+      class="w-full"
+    />
+
+    <template #title>
+      <UColorModeImage
+        :light="header.logo.light"
+        :dark="header.logo.dark"
+        :alt="header.logo.alt"
+        class="h-6 w-auto shrink-0"
+      />
+
+      {{ header.title }}
     </template>
 
     <template #right>
       <UContentSearchButton
         v-if="header?.search"
-        :label="null"
         class="lg:hidden"
       />
 
@@ -33,13 +40,16 @@ const { header } = useAppConfig()
         <UButton
           v-for="(link, index) of header.links"
           :key="index"
-          v-bind="{ color: 'gray', variant: 'ghost', ...link }"
+          v-bind="{ color: 'neutral', variant: 'ghost', ...link }"
         />
       </template>
     </template>
 
-    <template #panel>
-      <UNavigationTree :links="mapContentNavigation(navigation)" />
+    <template #body>
+      <UContentNavigation
+        highlight
+        :navigation="navigation"
+      />
     </template>
   </UHeader>
 </template>
