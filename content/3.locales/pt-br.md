@@ -18,43 +18,43 @@ $faker = new Xefi\Faker\Faker('pt_BR');
 
 #### Region
 ```php
-$faker->region(); // Sul
+$faker->region(); // Centro-Oeste
 ```
 
 #### State
 Generates a Brazilian state as an array keyed by its UF code.
 ```php
-$faker->state(); // {"AC":"Acre"}
+$faker->state(); // {"PI":"Piauí"}
 ```
 
 #### City
 ```php
-$faker->city(); // Macapá
+$faker->city(); // Uberlândia
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 59802-061
+$faker->postcode(); // 53025-328
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 2434
+$faker->houseNumber(); // 1721
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Ladeira São João
+$faker->streetName(); // Avenida Visconde de Mauá
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // Avenida Augusta, 2207
+$faker->streetAddress(); // Alameda Barão do Rio Branco, 1844
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // Estrada Brigadeiro Faria Lima, 431, São Luís - MA, 74400-989
+$faker->fullAddress(); // Rodovia Joaquim Nabuco, 1656, Aracaju - SE, 74297-598
 ```
 
 ## Colors
@@ -66,20 +66,20 @@ $faker->safeColorName(); // Branco
 
 #### Color Name
 ```php
-$faker->colorName(); // Roxo
+$faker->colorName(); // Coral
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Paulista Logística S.A.
+$faker->company(); // Pantanal Transportes Ltda.
 ```
 
 #### CNPJ
 Generates a CNPJ (Cadastro Nacional da Pessoa Jurídica) with valid check digits.
 ```php
-$faker->cnpj(formatted: true); // 68.036.467/0005-59
+$faker->cnpj(formatted: true); // 72.730.067/0003-54
 ```
 
 ## Financial
@@ -87,7 +87,7 @@ $faker->cnpj(formatted: true); // 68.036.467/0005-59
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Generates a Brazilian IBAN (bank ISPB, branch, account, account type and holder position).
 ```php
-$faker->iban(countryCode: null, format: null); // BR3766297013045797789500938C3
+$faker->iban(countryCode: null, format: null); // BR5359986225355907051055496P9
 ```
 
 ## Person
@@ -95,30 +95,30 @@ $faker->iban(countryCode: null, format: null); // BR3766297013045797789500938C3
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Cláudia Oliveira
+$faker->name(gender: 'F'); // Renata Pereira
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Ana
+$faker->firstName(gender: 'F'); // Camila
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Silva
+$faker->lastName(); // Moreira
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Sra.
+$faker->title(gender: 'F'); // Profa.
 ```
 
 #### CPF
 Generates a CPF (Cadastro de Pessoas Físicas) with valid check digits.
 ```php
-$faker->cpf(formatted: true); // 288.123.001-62
+$faker->cpf(formatted: true); // 022.144.733-43
 ```
 
 ## Phone
@@ -127,29 +127,34 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 11967060085
+$faker->phoneNumber(); // 71947699301
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 48944816387
+$faker->cellPhoneNumber(); // 11978184932
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 4134742398
+$faker->landlinePhoneNumber(); // 2123112317
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +55 31 3026 6303
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // aumenta são oportunidades
+$faker->words(words: 3); // e trabalham de
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // As equipes trabalham juntas para alcançar metas em comum. Indicadores de desempenho orientam as decisões da...
+$faker->sentences(sentences: 3); // As equipes trabalham juntas para alcançar metas em comum. Avaliações periódicas ajudam a identificar...
 ```
 
 #### Paragraphs

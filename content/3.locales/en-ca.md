@@ -18,68 +18,68 @@ $faker = new Xefi\Faker\Faker('en_CA');
 
 #### Province
 ```php
-$faker->province(); // Northwest Territories
+$faker->province(); // Nunavut
 ```
 
 #### Province code
 Returns a random two-letter province or territory code.
 ```php
-$faker->provinceCode(); // NU
+$faker->provinceCode(); // NS
 ```
 
 #### City
 ```php
-$faker->city(); // Saskatoon
+$faker->city(); // Sudbury
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // R6V 2V5
+$faker->postcode(); // A0M 7G9
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 6139
+$faker->houseNumber(); // 9811
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // King Lane
+$faker->streetName(); // Robson Boulevard
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // 3148 Church Boulevard
+$faker->streetAddress(); // 9636 Jarvis Boulevard
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // 5390 Maple Way, Sherbrooke QC H7V 8G3
+$faker->fullAddress(); // 7884 Yonge Crescent, Montreal QC H3W 6C8
 ```
 
 ## Colors
 
 #### Safe Color Name
 ```php
-$faker->safeColorName(); // White
+$faker->safeColorName(); // Green
 ```
 
 #### Color Name
 ```php
-$faker->colorName(); // Yellow
+$faker->colorName(); // LightBlue
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Northern Lights Energy Inc.
+$faker->company(); // Great Lakes Shipping Corp.
 ```
 
 #### Business number
 Generates a 9-digit federal Business Number (BN) with a valid Luhn check digit.
 ```php
-$faker->businessNumber(); // 820035103
+$faker->businessNumber(); // 938713294
 ```
 
 ## Financial
@@ -87,7 +87,7 @@ $faker->businessNumber(); // 820035103
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Canada does not use IBAN: this builds an IBAN-shaped string from a 5-digit transit number, a 3-digit institution number and a 7-digit account number.
 ```php
-$faker->iban(countryCode: null, format: null); // CA50559650011124185
+$faker->iban(countryCode: null, format: null); // CA96709100107141859
 ```
 
 ## Person
@@ -95,30 +95,30 @@ $faker->iban(countryCode: null, format: null); // CA50559650011124185
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Abigail Wong
+$faker->name(gender: 'F'); // Lauren Johnson
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Courtney
+$faker->firstName(gender: 'F'); // Amelia
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Martin
+$faker->lastName(); // Murray
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Mrs.
+$faker->title(gender: 'F'); // Rev.
 ```
 
 #### SIN
 Generates a Social Insurance Number (SIN) with a valid Luhn check digit.
 ```php
-$faker->sin(formatted: false); // 441074945
+$faker->sin(formatted: false); // 377556576
 ```
 
 ## Phone
@@ -127,32 +127,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 2365459742
+$faker->phoneNumber(); // 6395061821
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 3656533496
+$faker->cellPhoneNumber(); // 8736322596
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // (548) 5285543
+$faker->landlinePhoneNumber(); // 8192976919
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +1 437 943 2608
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // new catalogue it
+$faker->words(words: 3); // suppliers direct central
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // Bilingual service remains a priority for customers across the country. The program is reviewed every spring...
+$faker->sentences(sentences: 3); // Mentors encourage new graduates to ask questions and take initiative. Flexible schedules let people balance...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // The service centre stays open through the long winter months. Staff analyze feedback carefully before...
+$faker->paragraphs(paragraphs: 3); // Every organization benefits from a clear plan and honest communication. Teams from coast to coast share their...
 ```

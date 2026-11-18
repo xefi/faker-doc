@@ -88,7 +88,7 @@ $faker->handelsregisternummer(); // HRB84923
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'DE', format: 'See code') // US7630004028379876543210
+$faker->iban() // DE22280420382619382472
 ```
 
 ## Person
@@ -108,6 +108,36 @@ $faker->firstName(gender: 'F') // Jana
 #### Lastname
 ```php
 $faker->lastName() // Klein
+```
+
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Fräulein
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 017663057694
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 01721689252
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 08975752516
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +49 211 7548480
 ```
 
 ## Text

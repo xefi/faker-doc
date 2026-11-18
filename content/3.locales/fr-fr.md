@@ -93,7 +93,7 @@ $faker->siren(); // 362521879
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'FR', format: 'See code') // FR7630004028379876543210943
+$faker->iban() // FR88079751392038QE18IP28D87
 ```
 
 ## Person
@@ -115,6 +115,12 @@ $faker->firstName(gender: 'F') // Anne
 $faker->lastName() // Levy
 ```
 
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Pr.
+```
+
 #### Nir
 
 This field corresponds to "Numéro d’Inscription au Répertoire" also called "Numéro de sécurité sociale"
@@ -122,6 +128,30 @@ This field corresponds to "Numéro d’Inscription au Répertoire" also called "
 // Gender: null(both), "M" (male) or "F" (female)
 // Formated: "x xx xx xx xxx xxx xx"
 $faker->nir(gender: 'M', formatted: true) // 1 84 12 75 123 456 78
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 0783622142
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 0767141557
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 0101376073
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +33 7 77 86 47 87
 ```
 
 ## Text

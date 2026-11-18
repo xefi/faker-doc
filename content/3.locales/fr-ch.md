@@ -93,7 +93,7 @@ $faker->vat(); // CHE-380.842.438 TVA
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'CH', format: 'See code') // CH6757112815366133814
+$faker->iban() // CH0855619154212312885
 ```
 
 ## Person
@@ -115,11 +115,41 @@ $faker->firstName(gender: 'F') // Anna
 $faker->lastName() // Steiner
 ```
 
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Prof.
+```
+
 #### AVS
 
 ```php
 // Formated: "756.xxxx.xxxx.xx"
 $faker->avs(formatted: false) // 7564038982068
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 0756457205
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 0783547239
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 0262174697
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +41 24 928 42 13
 ```
 
 ## Text

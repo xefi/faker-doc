@@ -18,73 +18,73 @@ $faker = new Xefi\Faker\Faker('en_AU');
 
 #### State
 ```php
-$faker->state(); // Tasmania
+$faker->state(); // Victoria
 ```
 
 #### State code
 ```php
-$faker->stateCode(); // QLD
+$faker->stateCode(); // VIC
 ```
 
 #### City
 ```php
-$faker->city(); // Albury
+$faker->city(); // Ballarat
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 2618
+$faker->postcode(); // 6709
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 211
+$faker->houseNumber(); // 128
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Sturt Street
+$faker->streetName(); // Lonsdale Drive
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // 223 Bligh Way
+$faker->streetAddress(); // 67 Waratah Court
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // 90 Russell Drive, Perth WA 6456
+$faker->fullAddress(); // 190 Boronia Boulevard, Geelong VIC 3528
 ```
 
 ## Colors
 
 #### Safe Color Name
 ```php
-$faker->safeColorName(); // Yellow
+$faker->safeColorName(); // Silver
 ```
 
 #### Color Name
 ```php
-$faker->colorName(); // RoyalBlue
+$faker->colorName(); // LightCoral
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Flinders Ranges Pastoral Co. Pty Ltd
+$faker->company(); // Hunter Valley Cellars Pty Ltd
 ```
 
 #### Company number
 Generates an Australian Company Number (ACN) with a valid modulus 10 check digit.
 ```php
-$faker->companyNumber(); // 781270013
+$faker->companyNumber(); // 376762426
 ```
 
 #### ABN
 Generates an Australian Business Number (ABN) with valid modulus 89 check digits.
 ```php
-$faker->abn(formatted: false); // 62473772144
+$faker->abn(formatted: false); // 90901788004
 ```
 
 ## Financial
@@ -92,13 +92,13 @@ $faker->abn(formatted: false); // 62473772144
 #### BSB
 Generates a Bank State Branch (BSB) code.
 ```php
-$faker->bsb(formatted: true); // 187-241
+$faker->bsb(formatted: true); // 182-670
 ```
 
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Australia does not use IBAN: this builds an IBAN-shaped string from a BSB and a 9-digit account number.
 ```php
-$faker->iban(countryCode: null, format: null); // AU92037732666426672
+$faker->iban(countryCode: null, format: null); // AU53736843098787233
 ```
 
 ## Person
@@ -106,36 +106,36 @@ $faker->iban(countryCode: null, format: null); // AU92037732666426672
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Ruby Martin
+$faker->name(gender: 'F'); // Tahlia Johnson
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Georgia
+$faker->firstName(gender: 'F'); // Olivia
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Wilson
+$faker->lastName(); // White
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Mrs
+$faker->title(gender: 'F'); // Prof
 ```
 
 #### TFN
 Generates a Tax File Number (TFN) with a valid modulus 11 check digit.
 ```php
-$faker->tfn(formatted: false); // 432952545
+$faker->tfn(formatted: false); // 711423495
 ```
 
 #### Medicare number
 Generates a Medicare card number with a valid check digit and an issue number.
 ```php
-$faker->medicareNumber(formatted: false); // 2431494494
+$faker->medicareNumber(formatted: false); // 3066798451
 ```
 
 ## Phone
@@ -144,32 +144,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 0745558281
+$faker->phoneNumber(); // 0724784496
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 0464398663
+$faker->cellPhoneNumber(); // 0438417919
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 0255011379
+$faker->landlinePhoneNumber(); // 0216242275
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +61 458 795 399
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // reports regularly and
+$faker->words(words: 3); // and the on
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // Good communication keeps regional offices connected with head office. Suppliers are chosen for their...
+$faker->sentences(sentences: 3); // Managers prioritise safety on every site, from the city to the bush. Mentors encourage graduates to ask...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // The service centre handles enquiries from customers in every state and territory. Staff favour practical...
+$faker->paragraphs(paragraphs: 3); // Labour costs and travel expenses are reviewed at the end of each quarter. Managers prioritise safety on every...
 ```

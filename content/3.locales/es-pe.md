@@ -18,68 +18,68 @@ $faker = new Xefi\Faker\Faker('es_PE');
 
 #### Region
 ```php
-$faker->region(); // Selva
+$faker->region(); // Costa
 ```
 
 #### Department
 Generates a Peruvian department as an array keyed by its UBIGEO code.
 ```php
-$faker->department(); // {"25":"Ucayali"}
+$faker->department(); // {"07":"Callao"}
 ```
 
 #### City
 ```php
-$faker->city(); // Juliaca
+$faker->city(); // Huaraz
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 05100
+$faker->postcode(); // 12883
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 1169
+$faker->houseNumber(); // 2952
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Calle Bolognesi
+$faker->streetName(); // Avenida San Martín
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // Calle Salaverry 3594
+$faker->streetAddress(); // Jirón Primavera 1826
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // Calle San Martín 2322, Cerro de Pasco 19116
+$faker->fullAddress(); // Prolongación Pardo 440, Huánuco 10707
 ```
 
 ## Colors
 
 #### Safe Color Name
 ```php
-$faker->safeColorName(); // VerdeAzulado
+$faker->safeColorName(); // Aguamarina
 ```
 
 #### Color Name
 ```php
-$faker->colorName(); // Magenta
+$faker->colorName(); // Dorado
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Textiles Arequipa S.A.A.
+$faker->company(); // Seguros del Pacífico Sur S.A.
 ```
 
 #### RUC
 Generates a RUC (Registro Único de Contribuyentes) with a valid mod 11 check digit.
 ```php
-$faker->ruc(); // 20886109238
+$faker->ruc(); // 20861379168
 ```
 
 ## Financial
@@ -87,13 +87,13 @@ $faker->ruc(); // 20886109238
 #### CCI
 Generates a CCI (Código de Cuenta Interbancario): bank, branch, account and two check digits.
 ```php
-$faker->cci(); // 02350229255748653487
+$faker->cci(); // 05375279627181001827
 ```
 
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Generates an IBAN-like number built around a CCI, Peru having no IBAN.
 ```php
-$faker->iban(countryCode: null, format: null); // PE7802366074381045103045
+$faker->iban(countryCode: null, format: null); // PE7100301093763508945366
 ```
 
 ## Person
@@ -101,30 +101,30 @@ $faker->iban(countryCode: null, format: null); // PE7802366074381045103045
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Elizabeth Fernández
+$faker->name(gender: 'F'); // Luz Morales
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Nelly
+$faker->firstName(gender: 'F'); // Haydée
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Medina
+$faker->lastName(); // García
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Srta.
+$faker->title(gender: 'F'); // Ing.
 ```
 
 #### DNI
 Generates an eight-digit DNI (Documento Nacional de Identidad) number.
 ```php
-$faker->dni(); // 15530810
+$faker->dni(); // 38386483
 ```
 
 ## Phone
@@ -133,32 +133,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 927513564
+$faker->phoneNumber(); // 914836912
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 931919637
+$faker->cellPhoneNumber(); // 940684415
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 74227600
+$faker->landlinePhoneNumber(); // 74238184
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +51 961 160 683
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // mejorar equipo nacional
+$faker->words(words: 3); // prioridad proyecto las
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // La capacidad de adaptación permite a la organización seguir siendo competitiva. Los programas de formación...
+$faker->sentences(sentences: 3); // La calidad de la atención sigue siendo una prioridad para las empresas peruanas. El manejo responsable de los...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // La satisfacción del cliente depende de un servicio rápido y confiable. Los indicadores de gestión orientan...
+$faker->paragraphs(paragraphs: 3); // La calidad de la atención sigue siendo una prioridad para las empresas peruanas. Cada proyecto necesita una...
 ```

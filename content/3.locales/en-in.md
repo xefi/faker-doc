@@ -83,7 +83,7 @@ $faker->gstin(); // 12OCKPK3802V6Z2
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'IN', format: 'See code') // IN28CU9011517189912178556470
+$faker->iban() // IN26455868882973914762169620
 ```
 
 #### IFSC
@@ -119,6 +119,36 @@ $faker->firstName(gender: 'F') // Suhana
 #### Lastname
 ```php
 $faker->lastName() // Tiwari
+```
+
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Dr.
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 06373192546
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 07710716233
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 03342487657
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +91 93004 31001
 ```
 
 ## Text

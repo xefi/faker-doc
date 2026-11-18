@@ -19,62 +19,62 @@ $faker = new Xefi\Faker\Faker('fa_IR');
 #### Province
 Returns a random province (استان).
 ```php
-$faker->province(); // اصفهان
+$faker->province(); // گیلان
 ```
 
 #### City
 ```php
-$faker->city(); // بیرجند
+$faker->city(); // سمنان
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 9645990189
+$faker->postcode(); // 4999987798
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 159
+$faker->houseNumber(); // 14
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // بلوار فرشته
+$faker->streetName(); // بزرگراه کارگر
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // خیابان ابن سینا، پلاک 132
+$faker->streetAddress(); // بلوار دماوند، پلاک 56
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // تهران، بزرگراه دماوند، پلاک 5، واحد 19، کد پستی 3337863597
+$faker->fullAddress(); // اصفهان، بزرگراه ونک، پلاک 108، واحد 1، کد پستی 7495693041
 ```
 
 ## Colors
 
 #### Safe Color Name
 ```php
-$faker->safeColorName(); // ارغوانی
+$faker->safeColorName(); // سبزآبی
 ```
 
 #### Color Name
 ```php
-$faker->colorName(); // آلویی
+$faker->colorName(); // نارنجی تیره
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // شرکت کاوش داده (سهامی خاص)
+$faker->company(); // شرکت ماهور پخش (سهامی خاص)
 ```
 
 #### Shenase Melli
 Returns a legal entity national identifier (شناسه ملی, 11 digits with one check digit).
 ```php
-$faker->shenaseMelli(); // 10198266374
+$faker->shenaseMelli(); // 14747969052
 ```
 
 ## Financial
@@ -82,7 +82,7 @@ $faker->shenaseMelli(); // 10198266374
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Returns an Iranian IBAN (شبا): 3-digit bank code followed by a 19-digit account number.
 ```php
-$faker->iban(countryCode: 'IR', format: null); // IR940043959638588254342083
+$faker->iban(countryCode: 'IR', format: null); // IR380658082552779132744372
 ```
 
 ## Person
@@ -90,30 +90,30 @@ $faker->iban(countryCode: 'IR', format: null); // IR940043959638588254342083
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // آزاده احمدی
+$faker->name(gender: 'F'); // سارا رستمی
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // ستاره
+$faker->firstName(gender: 'F'); // سمیرا
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // طاهری
+$faker->lastName(); // هاشمی
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // دکتر
+$faker->title(gender: 'F'); // استاد
 ```
 
 #### Code Melli
 Returns an Iranian national code (کد ملی, 10 digits with one check digit).
 ```php
-$faker->codeMelli(); // 3895068322
+$faker->codeMelli(); // 1565395654
 ```
 
 ## Phone
@@ -122,32 +122,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 09101682478
+$faker->phoneNumber(); // 05195862314
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 09191346772
+$faker->cellPhoneNumber(); // 09507554574
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 02616353150
+$faker->landlinePhoneNumber(); // 01317434753
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +98 26 1097 1019
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // موفقیت به اولویت
+$faker->words(words: 3); // شرکت شرکت‌ها شناسایی
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // هر پروژه برای موفقیت به توجه ویژه و برنامه‌ریزی دقیق نیاز دارد. ارتباط مؤثر میان کارکنان بهره‌وری را افزایش...
+$faker->sentences(sentences: 3); // کیفیت خدمات همچنان هدف اصلی هر شرکت است. مدیریت منابع عامل کلیدی موفقیت کلی است. چالش‌های روزانه با مدیریت...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // مدیریت منابع عامل کلیدی موفقیت کلی است. روش‌های کار با تغییر نیازها و فناوری‌ها تحول می‌یابند. انعطاف‌پذیری...
+$faker->paragraphs(paragraphs: 3); // کیفیت خدمات همچنان هدف اصلی هر شرکت است. هر پروژه برای موفقیت به توجه ویژه و برنامه‌ریزی دقیق نیاز دارد....
 ```

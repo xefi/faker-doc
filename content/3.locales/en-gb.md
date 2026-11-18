@@ -93,7 +93,7 @@ $faker->companyRegistrationNumber(); // KH839263
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'GB', format: 'See code') // GB72JJED92839147382930
+$faker->iban() // GB44TUUX10985800291633
 ```
 
 ## Person
@@ -113,6 +113,36 @@ $faker->firstName(gender: 'F') // Lily
 #### Lastname
 ```php
 $faker->lastName() // King
+```
+
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Lady
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 07575953286
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 07401044359
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 02004235475
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +44 121 571 8349
 ```
 
 ## Text

@@ -19,43 +19,43 @@ $faker = new Xefi\Faker\Faker('ru_RU');
 #### Region
 Returns a random federal subject (republic, krai, oblast or federal city).
 ```php
-$faker->region(); // Нижегородская область
+$faker->region(); // Удмуртская Республика
 ```
 
 #### Region code
 Returns a random two-digit federal subject code.
 ```php
-$faker->regionCode(); // 23
+$faker->regionCode(); // 74
 ```
 
 #### City
 ```php
-$faker->city(); // Хабаровск
+$faker->city(); // Омск
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 620898
+$faker->postcode(); // 656100
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 25
+$faker->houseNumber(); // 90
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // ш. Чайковского
+$faker->streetName(); // ул. Энтузиастов
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // пр-т Жукова, д. 58
+$faker->streetAddress(); // проезд Гоголя, д. 18
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // проезд Ломоносова, д. 93, кв. 191, г. Улан-Удэ, Республика Бурятия, 670535
+$faker->fullAddress(); // б-р Победы, д. 141, кв. 5, г. Санкт-Петербург, 190473
 ```
 
 ## Colors
@@ -67,26 +67,26 @@ $faker->safeColorName(); // Цвет морской волны
 
 #### Color Name
 ```php
-$faker->colorName(); // Небесно-голубой
+$faker->colorName(); // Перу
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // ООО «Берёзка»
+$faker->company(); // АО «Алтайские продукты»
 ```
 
 #### Company INN
 Returns a legal entity taxpayer number (ИНН, 10 digits with one check digit).
 ```php
-$faker->companyInn(); // 6392898263
+$faker->companyInn(); // 7603957346
 ```
 
 #### OGRN
 Returns a primary state registration number of a legal entity (ОГРН, 13 digits).
 ```php
-$faker->ogrn(); // 1221552169090
+$faker->ogrn(); // 5096450692311
 ```
 
 ## Financial
@@ -94,7 +94,7 @@ $faker->ogrn(); // 1221552169090
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Russia does not use IBAN: build an IBAN-shaped value from a BIK (9 digits) and an account number (20 digits).
 ```php
-$faker->iban(countryCode: null, format: null); // RU2404193207073664482730585434260
+$faker->iban(countryCode: null, format: null); // RU1704935788815839023644139263735
 ```
 
 ## Person
@@ -102,18 +102,18 @@ $faker->iban(countryCode: null, format: null); // RU2404193207073664482730585434
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Зоя Степанова
+$faker->name(gender: 'F'); // Василиса Иванова
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Ксения
+$faker->firstName(gender: 'F'); // Ирина
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Егорова
+$faker->lastName(); // Григорьева
 ```
 
 #### Title
@@ -125,13 +125,13 @@ $faker->title(gender: 'F'); // проф.
 #### Individual INN
 Returns an individual taxpayer number (ИНН, 12 digits with two check digits).
 ```php
-$faker->individualInn(); // 839461559768
+$faker->individualInn(); // 896603760788
 ```
 
 #### SNILS
 Returns a pension insurance number (СНИЛС) formatted as XXX-XXX-XXX YY.
 ```php
-$faker->snils(); // 090-454-185 60
+$faker->snils(); // 095-310-517 53
 ```
 
 ## Phone
@@ -140,32 +140,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 89522562711
+$faker->phoneNumber(); // 83847016904
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 89857793560
+$faker->cellPhoneNumber(); // 89022772058
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 83568573797
+$faker->landlinePhoneNumber(); // 83244231826
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +7 952 237 84 59
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // требованиям улучшения исправления
+$faker->words(words: 3); // внимания снижают данных
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // Команды работают вместе, чтобы достигать общих целей. Удовлетворённость клиентов зависит от качества...
+$faker->sentences(sentences: 3); // Качество услуг остаётся главной целью для каждой современной компании. Процессы регулярно пересматриваются,...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // Управление ресурсами является ключевым фактором общего успеха. Методы работы меняются вместе с потребностями...
+$faker->paragraphs(paragraphs: 3); // Качество услуг остаётся главной целью для каждой современной компании. Каждый проект требует особого внимания...
 ```

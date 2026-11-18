@@ -89,7 +89,7 @@ $faker->unp(); // 292113015
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'BY', format: 'See code'); // BY60XEPB01979826101994987820
+$faker->iban() // BY48UQRQ74218781969163049095
 ```
 
 ## Person
@@ -118,6 +118,30 @@ $faker->lastName(gender: 'F'); // Кісялёва
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
 $faker->title(gender: 'F'); // спадарыня
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 80339051363
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 80441878537
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 80212754974
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +375 17 420 38 29
 ```
 
 ## Text

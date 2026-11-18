@@ -89,7 +89,7 @@ $faker->ein(); // 74-7205738
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'US', format: 'See code') // US7630004028379876543210943
+$faker->iban() // US6426064516043062770457512
 ```
 
 ## Person
@@ -109,6 +109,36 @@ $faker->firstName(gender: 'F') // Betty
 #### Lastname
 ```php
 $faker->lastName() // Anderson
+```
+
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Dr.
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 5039921414
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 3059855542
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 5038000127
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +1 212 819 3430
 ```
 
 ## Text

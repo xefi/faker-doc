@@ -18,79 +18,79 @@ $faker = new Xefi\Faker\Faker('it_IT');
 
 #### Region
 ```php
-$faker->region(); // Friuli-Venezia Giulia
+$faker->region(); // Campania
 ```
 
 #### Province
 ```php
-$faker->province(); // Bari
+$faker->province(); // Messina
 ```
 
 #### Province code
 Returns a random two-letter province code (sigla).
 ```php
-$faker->provinceCode(); // SA
+$faker->provinceCode(); // TN
 ```
 
 #### City
 ```php
-$faker->city(); // Imola
+$faker->city(); // Bari
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 80886
+$faker->postcode(); // 80098
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 184
+$faker->houseNumber(); // 25
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Lungomare Santa Maria
+$faker->streetName(); // Viale Indipendenza
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // Largo IV Novembre 187
+$faker->streetAddress(); // Largo Leonardo da Vinci 14
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // Via Dante Alighieri 233, 18632 Parma PR
+$faker->fullAddress(); // Largo Giacomo Matteotti 162, 59250 Bari BA
 ```
 
 ## Colors
 
 #### Safe Color Name
 ```php
-$faker->safeColorName(); // Acqua
+$faker->safeColorName(); // Fucsia
 ```
 
 #### Color Name
 ```php
-$faker->colorName(); // Magenta
+$faker->colorName(); // Rosso
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Costruzioni Bianchi S.p.A.
+$faker->company(); // Romano Alimentari S.r.l.
 ```
 
 #### Partita IVA
 Returns an 11-digit partita IVA: 7-digit company number, 3-digit tax office code and a Luhn check digit.
 ```php
-$faker->partitaIva(); // 46451980844
+$faker->partitaIva(); // 23205400551
 ```
 
 #### VAT number
 Returns an Italian intra-community VAT number, such as "IT12345678903".
 ```php
-$faker->vat(); // IT02656420631
+$faker->vat(); // IT05405970301
 ```
 
 ## Financial
@@ -98,7 +98,7 @@ $faker->vat(); // IT02656420631
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Returns an Italian IBAN: CIN check letter, ABI (5 digits), CAB (5 digits) and a 12-digit account number.
 ```php
-$faker->iban(countryCode: 'IT', format: null); // IT73K6612422206760489456204
+$faker->iban(countryCode: 'IT', format: null); // IT52F2203322766173132348477
 ```
 
 ## Person
@@ -106,30 +106,30 @@ $faker->iban(countryCode: 'IT', format: null); // IT73K6612422206760489456204
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Serena Costa
+$faker->name(gender: 'F'); // Federica Conti
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Greta
+$faker->firstName(gender: 'F'); // Alice
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Esposito
+$faker->lastName(); // Mariani
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Ing.
+$faker->title(gender: 'F'); // Avv.
 ```
 
 #### Codice Fiscale
 Returns a codice fiscale with a valid check character, built from a random name and birth date.
 ```php
-$faker->codiceFiscale(gender: 'F'); // CSTDNL53T53A944R
+$faker->codiceFiscale(gender: 'F'); // RMNGRG93L63L781H
 ```
 
 ## Phone
@@ -138,29 +138,34 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 0913481526
+$faker->phoneNumber(); // 0552860949
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 3879015050
+$faker->cellPhoneNumber(); // 3319040532
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 0815318261
+$faker->landlinePhoneNumber(); // 0554168635
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +39 055 178 7565
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // la metodi l'analisi
+$faker->words(words: 3); // a a sviluppare
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // I processi vengono rivisti per migliorare i risultati e rispondere al mercato. Alcuni indicatori aiutano a...
+$faker->sentences(sentences: 3); // I collaboratori lavorano insieme per raggiungere traguardi comuni. Programmi su misura sostengono la crescita...
 ```
 
 #### Paragraphs

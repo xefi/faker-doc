@@ -19,43 +19,43 @@ $faker = new Xefi\Faker\Faker('nb_NO');
 #### County
 Get a random county (fylke) name.
 ```php
-$faker->county(); // Nordland
+$faker->county(); // Agder
 ```
 
 #### County code
 Get a random county number (fylkesnummer).
 ```php
-$faker->countyCode(); // 39
+$faker->countyCode(); // 33
 ```
 
 #### City
 ```php
-$faker->city(); // Oslo
+$faker->city(); // Larvik
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 9564
+$faker->postcode(); // 4958
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 244
+$faker->houseNumber(); // 179
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Nordresvingen
+$faker->streetName(); // Skolevegen
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // Furugate 203
+$faker->streetAddress(); // Solveien 73
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // Øvrebakken 42, 3049 Haugesund
+$faker->fullAddress(); // Bryggetunet 93, 1100 Skien
 ```
 
 ## Colors
@@ -67,26 +67,26 @@ $faker->safeColorName(); // Marineblå
 
 #### Color Name
 ```php
-$faker->colorName(); // Akva
+$faker->colorName(); // Blå
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Sognefjord Kraftlag SA
+$faker->company(); // Johansen Rørlegger AS
 ```
 
 #### Company number
 Get a random organisation number (organisasjonsnummer) with its modulus 11 check digit.
 ```php
-$faker->companyNumber(); // 977998506
+$faker->companyNumber(); // 855550733
 ```
 
 #### VAT number
 Get a random VAT number (MVA-nummer), built on an organisation number.
 ```php
-$faker->vat(); // NO944063242MVA
+$faker->vat(); // NO821844169MVA
 ```
 
 ## Financial
@@ -94,7 +94,7 @@ $faker->vat(); // NO944063242MVA
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Get a random IBAN, a Norwegian one (eleven digits account number with its modulus 11 check digit) by default.
 ```php
-$faker->iban(countryCode: null, format: null); // NO2934373016324
+$faker->iban(countryCode: null, format: null); // NO4328834353999
 ```
 
 ## Person
@@ -102,30 +102,30 @@ $faker->iban(countryCode: null, format: null); // NO2934373016324
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Nina Amundsen
+$faker->name(gender: 'F'); // Nina Solberg
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Synnøve
+$faker->firstName(gender: 'F'); // Sofie
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Jørgensen
+$faker->lastName(); // Johansen
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Frk.
+$faker->title(gender: 'F'); // Fru
 ```
 
 #### Fødselsnummer
 Get a random national identity number (fødselsnummer) with both of its control digits.
 ```php
-$faker->fodselsnummer(gender: 'F', formatted: false); // 26128931618
+$faker->fodselsnummer(gender: 'F', formatted: false); // 02125697863
 ```
 
 ## Phone
@@ -134,29 +134,34 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 95868257
+$faker->phoneNumber(); // 73234222
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 92697337
+$faker->cellPhoneNumber(); // 99902492
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 62738180
+$faker->landlinePhoneNumber(); // 30694893
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +47 65 55 56 98
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // og fremdriften pålitelige
+$faker->words(words: 3); // felles å kundenes
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // Teamene samarbeider tett for å nå de felles målene. Arbeidsmetodene utvikler seg i takt med behovene og...
+$faker->sentences(sentences: 3); // Teamene samarbeider tett for å nå de felles målene. En jevnlig evaluering av arbeidsrutinene avdekker mulige...
 ```
 
 #### Paragraphs

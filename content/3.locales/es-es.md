@@ -92,12 +92,10 @@ $faker->vat(); // ES0049721814
 #### Iban
 Please see [base method](/extensions/financial#iban) for details
 ```php
-$faker->iban(countryCode: 'ES', format: 'See code') // ES5690896202869356118608
+$faker->iban() // ES8828050165410956609561
 ```
 
-
 ## Person
-
 
 #### Name
 ```php
@@ -131,6 +129,30 @@ $faker->dni() // 84725412J
 This field corresponds to "Número de Identidad de Extranjero".
 ```php
 $faker->nie() // X4394920B
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 728427400
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 746309343
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 976015067
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +34 985 20 29 90
 ```
 
 ## Text

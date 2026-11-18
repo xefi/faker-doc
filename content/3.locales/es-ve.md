@@ -18,68 +18,68 @@ $faker = new Xefi\Faker\Faker('es_VE');
 
 #### Region
 ```php
-$faker->region(); // Capital
+$faker->region(); // Guayana
 ```
 
 #### State
 Generates a Venezuelan state (or the Distrito Capital).
 ```php
-$faker->state(); // Sucre
+$faker->state(); // Carabobo
 ```
 
 #### City
 ```php
-$faker->city(); // La Victoria
+$faker->city(); // Caracas
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 6109
+$faker->postcode(); // 7935
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 135
+$faker->houseNumber(); // 176
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Calle Francisco de Miranda
+$faker->streetName(); // Prolongación Páez
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // Carrera Ayacucho, Nº 162
+$faker->streetAddress(); // Transversal Sucre, Nº 127
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // Transversal Bella Vista, Nº 153, Carúpano 4132
+$faker->fullAddress(); // Callejón Lecuna, Nº 39, El Tigre 4382
 ```
 
 ## Colors
 
 #### Safe Color Name
 ```php
-$faker->safeColorName(); // VerdeAzulado
+$faker->safeColorName(); // Azul
 ```
 
 #### Color Name
 ```php
-$faker->colorName(); // SalmónClaro
+$faker->colorName(); // Lima
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Transporte Caribe Express C.A.
+$faker->company(); // Arepera Los Cuatro Vientos C.A.
 ```
 
 #### RIF
 Generates a RIF (Registro de Información Fiscal) with a valid check digit, such as J-12345678-9.
 ```php
-$faker->rif(); // J-75019880-4
+$faker->rif(); // J-36471366-4
 ```
 
 ## Financial
@@ -87,7 +87,7 @@ $faker->rif(); // J-75019880-4
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Generates an IBAN-like number built around a 20-digit Venezuelan bank account, Venezuela having no IBAN.
 ```php
-$faker->iban(countryCode: null, format: null); // VE2901150753977463173073
+$faker->iban(countryCode: null, format: null); // VE0901051407366048206021
 ```
 
 ## Person
@@ -95,30 +95,30 @@ $faker->iban(countryCode: null, format: null); // VE2901150753977463173073
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Milagros Peña
+$faker->name(gender: 'F'); // Patricia Morales
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Andreína
+$faker->firstName(gender: 'F'); // Elena
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Sánchez
+$faker->lastName(); // Peña
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Sra.
+$faker->title(gender: 'F'); // Ing.
 ```
 
 #### Cédula
 Generates a cédula de identidad number, prefixed by V- (Venezuelan) or E- (foreign resident).
 ```php
-$faker->cedula(); // V-25056388
+$faker->cedula(); // V-22226576
 ```
 
 ## Phone
@@ -127,32 +127,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 04126500896
+$faker->phoneNumber(); // 04221651845
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 04225664601
+$faker->cellPhoneNumber(); // 04124410992
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 02810852798
+$faker->landlinePhoneNumber(); // 02746242342
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +58 424 309 9510
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // innecesarios constancia oportunidades
+$faker->words(words: 3); // cada del están
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // Los problemas cotidianos se resuelven con creatividad y constancia. La formación del talento humano es una...
+$faker->sentences(sentences: 3); // Los problemas cotidianos se resuelven con creatividad y constancia. Los objetivos se adaptan a la realidad...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // La calidad del servicio sigue siendo el compromiso principal de la empresa. Cada proyecto arranca con una...
+$faker->paragraphs(paragraphs: 3); // La administración cuidadosa de los recursos garantiza la estabilidad del negocio. Los métodos de trabajo se...
 ```

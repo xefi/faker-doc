@@ -18,42 +18,42 @@ $faker = new Xefi\Faker\Faker('nl_BE');
 
 #### Region
 ```php
-$faker->region(); // Brussels Hoofdstedelijk Gewest
+$faker->region(); // Vlaams Gewest
 ```
 
 #### Province
 ```php
-$faker->province(); // Vlaams-Brabant
+$faker->province(); // Oost-Vlaanderen
 ```
 
 #### City
 ```php
-$faker->city(); // Herentals
+$faker->city(); // Diest
 ```
 
 #### Post code
 ```php
-$faker->postcode(); // 3766
+$faker->postcode(); // 8534
 ```
 
 #### House Number
 ```php
-$faker->houseNumber(); // 123
+$faker->houseNumber(); // 220
 ```
 
 #### Street Name
 ```php
-$faker->streetName(); // Kapellaan
+$faker->streetName(); // Consciencelei
 ```
 
 #### Street Address
 ```php
-$faker->streetAddress(); // Kastanjevest 265
+$faker->streetAddress(); // Dijleplein 189
 ```
 
 #### Full Address
 ```php
-$faker->fullAddress(); // Dorpsplein 211, 2566 Elsene
+$faker->fullAddress(); // Tulpenplein 17, 1227 Ukkel
 ```
 
 ## Colors
@@ -65,26 +65,26 @@ $faker->safeColorName(); // Grijs
 
 #### Color Name
 ```php
-$faker->colorName(); // Magenta
+$faker->colorName(); // Lichtgroen
 ```
 
 ## Company
 
 #### Company
 ```php
-$faker->company(); // Brouwerij De Leie BV
+$faker->company(); // Willems Elektrotechniek BV
 ```
 
 #### Company number
 Get a random enterprise number (ondernemingsnummer) with its modulo 97 check digits.
 ```php
-$faker->companyNumber(); // 0554956893
+$faker->companyNumber(); // 0380389755
 ```
 
 #### VAT number
 Get a random VAT number (btw-nummer), built on an enterprise number.
 ```php
-$faker->vat(); // BE0354761662
+$faker->vat(); // BE0262854162
 ```
 
 ## Financial
@@ -92,7 +92,7 @@ $faker->vat(); // BE0354761662
 #### Iban
 Please see [base method](/extensions/financial#iban) for details. Get a random IBAN, a Belgian one (account number with its modulo 97 check digits) by default.
 ```php
-$faker->iban(countryCode: null, format: null); // BE41159680033310
+$faker->iban(countryCode: null, format: null); // BE37093010858428
 ```
 
 ## Person
@@ -100,30 +100,30 @@ $faker->iban(countryCode: null, format: null); // BE41159680033310
 #### Name
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->name(gender: 'F'); // Els Martens
+$faker->name(gender: 'F'); // Katrien Verbeke
 ```
 
 #### Firstname
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->firstName(gender: 'F'); // Leen
+$faker->firstName(gender: 'F'); // Hanne
 ```
 
 #### Lastname
 ```php
-$faker->lastName(); // Van den Bossche
+$faker->lastName(); // De Vos
 ```
 
 #### Title
 ```php
 // Gender: null(both), "M" (male) or "F" (female)
-$faker->title(gender: 'F'); // Prof.
+$faker->title(gender: 'F'); // Ir.
 ```
 
 #### RRN (Rijksregisternummer)
 Get a random national register number (rijksregisternummer) with its modulo 97 check digits.
 ```php
-$faker->rrn(gender: 'F', formatted: false); // 77120103287
+$faker->rrn(gender: 'F', formatted: false); // 63071419677
 ```
 
 ## Phone
@@ -132,32 +132,37 @@ Please see [base methods](/extensions/phone) for every format variant.
 
 #### Phone number
 ```php
-$faker->phoneNumber(); // 0466631200
+$faker->phoneNumber(); // 0492079082
 ```
 
 #### Cell phone number
 ```php
-$faker->cellPhoneNumber(); // 0478234716
+$faker->cellPhoneNumber(); // 0463385437
 ```
 
 #### Landline phone number
 ```php
-$faker->landlinePhoneNumber(); // 090029815
+$faker->landlinePhoneNumber(); // 096581036
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber(); // +32 460 27 73 32
 ```
 
 ## Text
 
 #### Words
 ```php
-$faker->words(words: 3); // tevredenheid vaardigheden volgen
+$faker->words(words: 3); // hogere te kan
 ```
 
 #### Sentences
 ```php
-$faker->sentences(sentences: 3); // Dagelijkse uitdagingen worden overwonnen dankzij goed beheer en passende vaardigheden. Data-analyse helpt om...
+$faker->sentences(sentences: 3); // Processen worden herzien om de resultaten te verbeteren en aan de eisen van de markt te voldoen. Data-analyse...
 ```
 
 #### Paragraphs
 ```php
-$faker->paragraphs(paragraphs: 3); // De kwaliteit van de dienstverlening blijft een belangrijk doel in de zakelijke sector. Elk project vraagt om...
+$faker->paragraphs(paragraphs: 3); // Het beheer van middelen is een sleutelfactor voor de totale prestatie. Werkmethoden veranderen mee met de...
 ```

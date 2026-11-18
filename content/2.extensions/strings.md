@@ -9,6 +9,15 @@ description: Strings extension for Xefi Faker PHP
 $faker->letter(); // c
 ```
 
+## Shuffle
+
+Shuffles a string or an array, using `shuffleString()` or `shuffleArray()` depending on the type you pass.
+
+```php
+$faker->shuffle(needle: 'abcdef'); // dafceb
+$faker->shuffle(needle: [1, 2, 3, 4, 5]); // [4, 1, 5, 2, 3]
+```
+
 ## Shuffle String
 
 ```php

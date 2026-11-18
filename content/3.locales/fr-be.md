@@ -93,7 +93,7 @@ $faker->vat(); // BE0895340190
 Please see [base method](/extensions/financial#iban) for details
 
 ```php
-$faker->iban(countryCode: 'BE', format: 'See code') // BE68539007547034
+$faker->iban() // BE16476188981434
 ```
 
 ## Person
@@ -115,6 +115,12 @@ $faker->firstName(gender: 'F') // Isabelle
 $faker->lastName() // Dupont
 ```
 
+#### Title
+```php
+// Gender: null(both), "M" (male) or "F" (female)
+$faker->title(gender: 'F') // Dr.
+```
+
 #### RRN (Rijksregisternummer)
 
 This field corresponds to the Belgian "Numéro de registre national", also known as the "Belgian National Number".
@@ -122,6 +128,30 @@ This field corresponds to the Belgian "Numéro de registre national", also known
 // Gender: null(both), "M" (male) or "F" (female)
 // Formated: "xxxx-xxxx-xx"
 $faker->rrn(gender: 'M', formatted: true) // 12 34 56 7890 12
+```
+
+## Phone
+
+Please see [base methods](/extensions/phone) for every format variant.
+
+#### Phone number
+```php
+$faker->phoneNumber() // 0475605721
+```
+
+#### Cell phone number
+```php
+$faker->cellPhoneNumber() // 0486838816
+```
+
+#### Landline phone number
+```php
+$faker->landlinePhoneNumber() // 040316359
+```
+
+#### International format
+```php
+$faker->spacedIndicatoredPhoneNumber() // +32 492 41 70 86
 ```
 
 ## Text
